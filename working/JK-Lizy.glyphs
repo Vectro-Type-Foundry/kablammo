@@ -1,10 +1,10 @@
 {
-.appVersion = "1272";
+.appVersion = "1274";
 DisplayStrings = (
 Elizab
 );
 date = "2019-11-09 23:40:06 +0000";
-familyName = "New Font";
+familyName = "JK Lizy 1";
 fontMaster = (
 {
 ascender = 800;

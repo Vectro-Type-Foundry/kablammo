@@ -1,5 +1,5 @@
 {
-.appVersion = "1273";
+.appVersion = "1274";
 DisplayStrings = (
 "Joke\012|N|/Placeholder |N| NON/Placeholder NON\012OO/Placeholder OO",
 Joker,
@@ -22,7 +22,7 @@ value = 0;
 );
 date = "2019-11-10 20:10:18 +0000";
 designer = "Scribble Tone";
-familyName = "JK 1";
+familyName = "JK Lizy 2";
 fontMaster = (
 {
 ascender = 800;

@@ -25,7 +25,7 @@ value = 1;
 );
 date = "2019-11-10 20:10:18 +0000";
 designer = "Scribble Tone";
-familyName = "JK 5";
+familyName = "JK Grotesk 5 Var";
 fontMaster = (
 {
 ascender = 800;
@@ -24547,7 +24547,7 @@ unicode = 0049;
 },
 {
 glyphname = J;
-lastChange = "2019-11-27 04:22:55 +0000";
+lastChange = "2019-11-27 22:20:41 +0000";
 layers = (
 {
 layerId = "4792427E-1FD9-4B91-A525-D6253927A849";
@@ -24667,7 +24667,7 @@ nodes = (
 "196 49 OFFCURVE",
 "148 117 OFFCURVE",
 "135 276 CURVE",
-"95 197 LINE",
+"81 257 LINE",
 "36 241 LINE"
 );
 },
@@ -24970,8 +24970,8 @@ nodes = (
 {
 closed = 1;
 nodes = (
-"-11 82 OFFCURVE",
-"120 -7 OFFCURVE",
+"21 64 OFFCURVE",
+"137 -7 OFFCURVE",
 "267 -7 CURVE SMOOTH",
 "370 -7 OFFCURVE",
 "486 64 OFFCURVE",
@@ -24984,11 +24984,11 @@ nodes = (
 "442 135 OFFCURVE",
 "348 49 OFFCURVE",
 "268 49 CURVE SMOOTH",
-"196 49 OFFCURVE",
-"135 118 OFFCURVE",
-"135 307 CURVE",
-"58 193 LINE",
-"-36 297 LINE"
+"184 49 OFFCURVE",
+"112 131 OFFCURVE",
+"112 357 CURVE",
+"55 275 LINE",
+"-1 194 LINE"
 );
 },
 {

@@ -1,10 +1,10 @@
 {
-.appVersion = "1272";
+.appVersion = "1274";
 DisplayStrings = (
 JOMa
 );
 date = "2019-11-09 19:53:26 +0000";
-familyName = "New Font";
+familyName = "JK 2";
 fontMaster = (
 {
 ascender = 800;

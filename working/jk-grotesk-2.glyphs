@@ -1,5 +1,5 @@
 {
-.appVersion = "1273";
+.appVersion = "1274";
 DisplayStrings = (
 "JAMBORINE \012|N|/Placeholder |N| NON/Placeholder NON\012OO/Placeholder OO",
 JAMBORINE,
@@ -22,7 +22,7 @@ value = 0;
 );
 date = "2019-11-10 20:10:18 +0000";
 designer = "Scribble Tone";
-familyName = "JK 1";
+familyName = "JK Grotesk 2";
 fontMaster = (
 {
 ascender = 800;
@@ -6617,28 +6617,12 @@ unicode = 007C;
 );
 instances = (
 {
-interpolationWeight = 1;
-interpolationWidth = 1;
-instanceInterpolations = {
-"4792427E-1FD9-4B91-A525-D6253927A849" = 1;
-};
-name = Boring;
-},
-{
 interpolationWeight = 600;
 interpolationWidth = 600;
 instanceInterpolations = {
 "4792427E-1FD9-4B91-A525-D6253927A849" = 1;
 };
 name = Mid;
-},
-{
-interpolationWeight = 1000;
-interpolationWidth = 1000;
-instanceInterpolations = {
-"4792427E-1FD9-4B91-A525-D6253927A849" = 1;
-};
-name = Funnest;
 }
 );
 unitsPerEm = 1000;
