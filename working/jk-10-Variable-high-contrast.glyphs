@@ -1,7 +1,7 @@
 {
 .appVersion = "1285";
 DisplayStrings = (
-"ABEGIJKMNORV \012|N|/Placeholder |N| NN/Placeholder NN",
+"ABEGIJKMNOR \012|N|/Placeholder |N| NN/Placeholder NN",
 ABEGIJKMNOR
 );
 customParameters = (
