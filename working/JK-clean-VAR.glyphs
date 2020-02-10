@@ -24,11 +24,11 @@ Tag = chao;
 },
 {
 name = "Variable Font Family Name";
-value = "JKlean Variable";
+value = "JK Clean 2 Variable";
 }
 );
 date = "2020-01-24 20:05:52 +0000";
-familyName = JKlean;
+familyName = "JK Clean 2";
 fontMaster = (
 {
 ascender = 800;

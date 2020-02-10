@@ -1,13 +1,12 @@
 {
 .appVersion = "1290";
 DisplayStrings = (
-"ABCDEFGHIJKLM\012NOPQRSTUVWXYZ\012NN/Placeholder NN/space OO/Placeholder OO",
-"UNITED/space STATES\012NATIONAL/space AERONAUTICAL\012AND/space SPACE/space ASSOCIATION"
+"ABCDEFGHIJKLM\012NOPQRSTUVWXYZ\012NN/Placeholder NN/space OO/Placeholder OO"
 );
 customParameters = (
 {
 name = "Enforce Compatibility Check";
-value = 1;
+value = 0;
 },
 {
 name = Axes;
@@ -20,18 +19,20 @@ Tag = chao;
 },
 {
 name = "Variable Font Family Name";
-value = "JKlean Variable";
+value = "JK Clean Variable";
 }
 );
-date = "2020-01-24 20:05:52 +0000";
-familyName = JKlean;
+date = "2020-02-09 05:52:08 +0000";
+familyName = "JK Clean";
 fontMaster = (
 {
 ascender = 800;
 capHeight = 700;
+custom = Clean;
 descender = -200;
 iconName = Light_Condensed;
 id = "B4EA0C51-6804-4423-9CCC-BF57B26265D1";
+weight = Bold;
 weightValue = 1;
 xHeight = 500;
 },
@@ -42,6 +43,7 @@ custom = Weird;
 descender = -200;
 iconName = Light_Extended;
 id = "7390BA8A-CD54-46A0-980C-73781B2212BF";
+weight = Bold;
 weightValue = 1000;
 xHeight = 500;
 }
