@@ -1,8 +1,8 @@
 {
-.appVersion = "1286";
+.appVersion = "1290";
 DisplayStrings = (
-"ABCDEFGHIJKLMNO\012PQRSTUVWXYZ\012|N|/Placeholder |N| NN/Placeholder NN",
-"ABEGIJ\012KMNOR "
+"ABCDEFGHIJKLMNO\012PQRSTUVWXYZ\012|N|/Placeholder |N|/space NN/Placeholder NN",
+"ABEGIJ\012KMNOR/space"
 );
 customParameters = (
 {
@@ -28,7 +28,7 @@ value = Variable;
 }
 );
 date = "2019-11-29 00:51:40 +0000";
-familyName = "JK 10";
+familyName = "JK-old";
 fontMaster = (
 {
 ascender = 800;
