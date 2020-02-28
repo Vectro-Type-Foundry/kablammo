@@ -14,19 +14,19 @@ value = 1;
 name = Axes;
 value = (
 {
-Name = Fun;
-Tag = funn;
+Name = Chaos;
+Tag = chao;
 }
 );
 },
 {
 name = "Variable Font Family Name";
-value = "Snarkles Variable v0.3";
+value = "Kablammo v0.4 Variable";
 }
 );
 date = "2020-02-28 19:06:25 +0000";
 designer = "Scribble Tone";
-familyName = "Snarkles v0.3";
+familyName = "Kablammo v0.4";
 featurePrefixes = (
 {
 automatic = 1;
@@ -55,7 +55,7 @@ fontMaster = (
 {
 ascender = 800;
 capHeight = 700;
-custom = Clean;
+custom = Calm;
 customParameters = (
 {
 name = "Master Icon Glyph Name";
@@ -73,7 +73,7 @@ xHeight = 500;
 {
 ascender = 800;
 capHeight = 700;
-custom = Fun;
+custom = Chaotic;
 customParameters = (
 {
 name = "Master Icon Glyph Name";
@@ -18485,7 +18485,8 @@ interpolationWidth = 1;
 instanceInterpolations = {
 "B4EA0C51-6804-4423-9CCC-BF57B26265D1" = 1;
 };
-name = "Bold Clean";
+name = "Bold Calm";
+weightClass = Bold;
 },
 {
 interpolationWeight = 1000;
@@ -18493,7 +18494,8 @@ interpolationWidth = 1000;
 instanceInterpolations = {
 "7390BA8A-CD54-46A0-980C-73781B2212BF" = 1;
 };
-name = "Bold Fun";
+name = "Bold Chaotic";
+weightClass = Bold;
 }
 );
 unitsPerEm = 1000;
