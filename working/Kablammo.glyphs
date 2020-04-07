@@ -1,8 +1,7 @@
 {
 .appVersion = "1312";
 DisplayStrings = (
-"TOILET/space PAPERH\012CRISIS\012HOH/Placeholder HOH/space OHO/Placeholder OHO",
-"/R.ss01"
+"TOILET/space PAPERH\012CRISIS\012HOH/Placeholder HOH/space OHO/Placeholder OHO"
 );
 customParameters = (
 {
