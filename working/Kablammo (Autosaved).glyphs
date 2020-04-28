@@ -46227,6 +46227,7 @@ width = 581;
 }
 );
 unicode = 00DD;
+changeCount = 1;
 },
 {
 glyphname = Ycircumflex;
@@ -46286,6 +46287,7 @@ width = 581;
 }
 );
 unicode = 0176;
+changeCount = 1;
 },
 {
 glyphname = Ydieresis;
@@ -46345,6 +46347,7 @@ width = 581;
 }
 );
 unicode = 0178;
+changeCount = 1;
 },
 {
 glyphname = Ygrave;
@@ -46404,6 +46407,7 @@ width = 581;
 }
 );
 unicode = 1EF2;
+changeCount = 1;
 },
 {
 glyphname = Z;
