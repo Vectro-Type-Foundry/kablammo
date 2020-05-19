@@ -38630,7 +38630,7 @@ unicode = 0051;
 },
 {
 glyphname = R;
-lastChange = "2020-05-19 18:55:46 +0000";
+lastChange = "2020-05-19 19:20:15 +0000";
 layers = (
 {
 anchors = (
@@ -99614,6 +99614,56 @@ nodes = (
 width = 294;
 }
 );
+}
+);
+instances = (
+{
+interpolationWeight = 1;
+interpolationWidth = 300;
+instanceInterpolations = {
+"65D5DB49-33CB-4119-8B92-85F04442B46F" = 1;
+};
+name = "Mild Light";
+},
+{
+interpolationWeight = 1;
+interpolationWidth = 700;
+instanceInterpolations = {
+"B4EA0C51-6804-4423-9CCC-BF57B26265D1" = 1;
+};
+name = "Mild Bold";
+},
+{
+interpolationWeight = 1000;
+interpolationWidth = 300;
+instanceInterpolations = {
+"DA12CC5E-F102-4B17-B99F-C66FBA9637B7" = 1;
+};
+name = "Wild Light";
+},
+{
+interpolationWeight = 1000;
+interpolationWidth = 700;
+instanceInterpolations = {
+"7390BA8A-CD54-46A0-980C-73781B2212BF" = 1;
+};
+name = "Wild Bold";
+},
+{
+interpolationWeight = 500;
+interpolationWidth = 300;
+instanceInterpolations = {
+"D1C2FCDB-9D91-4D51-A68E-B1296371782D" = 1;
+};
+name = "Semichaotic Light";
+},
+{
+interpolationWeight = 500;
+interpolationWidth = 700;
+instanceInterpolations = {
+"52B945EE-EB50-4C92-9E35-4DABA7AF8C57" = 1;
+};
+name = "Semichaotic Bold";
 }
 );
 unitsPerEm = 1000;
