@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Wacute" format="2">
+  <advance width="792"/>
+  <unicode hex="1E82"/>
+  <anchor x="403" y="0" name="bottom"/>
+  <anchor x="392" y="700" name="top"/>
+  <outline>
+    <component base="W"/>
+    <component base="acutecomb.case" xOffset="282"/>
+  </outline>
+</glyph>

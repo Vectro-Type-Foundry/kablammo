@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="commaaccentcomb.case" format="2">
+  <anchor x="109" y="0" name="_bottom"/>
+  <outline>
+    <component base="comma" xScale="0.77913" yScale="0.77913" xOffset="3" yOffset="-170"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>222</integer>
+    </dict>
+  </lib>
+</glyph>

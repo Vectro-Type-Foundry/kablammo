@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ogonekcomb.case" format="2">
+  <anchor x="210" y="0" name="_ogonek"/>
+  <outline>
+    <contour>
+      <point x="235.991" y="28" type="curve"/>
+      <point x="197" y="28" type="line"/>
+      <point x="100" y="-18"/>
+      <point x="40" y="-88"/>
+      <point x="40" y="-169" type="curve" smooth="yes"/>
+      <point x="40" y="-245"/>
+      <point x="79" y="-288"/>
+      <point x="141.003" y="-287.993" type="curve" smooth="yes"/>
+      <point x="184" y="-288"/>
+      <point x="231" y="-263"/>
+      <point x="231" y="-251" type="curve" smooth="yes"/>
+      <point x="231" y="-244"/>
+      <point x="228" y="-239"/>
+      <point x="221" y="-239" type="curve" smooth="yes"/>
+      <point x="204" y="-239"/>
+      <point x="180" y="-261"/>
+      <point x="144" y="-261" type="curve" smooth="yes"/>
+      <point x="99" y="-261"/>
+      <point x="70" y="-235"/>
+      <point x="70" y="-170" type="curve" smooth="yes"/>
+      <point x="70" y="-93"/>
+      <point x="119" y="-37"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>294</integer>
+    </dict>
+  </lib>
+</glyph>
