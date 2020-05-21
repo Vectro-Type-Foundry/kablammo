@@ -101211,11 +101211,11 @@ width = 294;
 );
 instances = (
 {
-interpolationWeight = 380.619;
+interpolationWeight = 480.519;
 interpolationWidth = 700;
 instanceInterpolations = {
-"52B945EE-EB50-4C92-9E35-4DABA7AF8C57" = 0.76076;
-"B4EA0C51-6804-4423-9CCC-BF57B26265D1" = 0.23924;
+"52B945EE-EB50-4C92-9E35-4DABA7AF8C57" = 0.96096;
+"B4EA0C51-6804-4423-9CCC-BF57B26265D1" = 0.03904;
 };
 name = "Mild Light";
 },
