@@ -101235,9 +101235,10 @@ width = 294;
 instances = (
 {
 interpolationWeight = 300;
-interpolationWidth = 1;
+interpolationWidth = 300;
 instanceInterpolations = {
-"65D5DB49-33CB-4119-8B92-85F04442B46F" = 1;
+"65D5DB49-33CB-4119-8B92-85F04442B46F" = 0.4008;
+"D1C2FCDB-9D91-4D51-A68E-B1296371782D" = 0.5992;
 };
 name = "Mild Light";
 },
