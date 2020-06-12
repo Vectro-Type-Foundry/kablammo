@@ -1,7 +1,8 @@
 {
-.appVersion = "1338";
+.appVersion = "1339";
 DisplayStrings = (
-"NUMBKERF\012HOH/Placeholder HOH/space OHO/Placeholder OHO"
+"NUMBKERF\012HOH/Placeholder HOH/space OHO/Placeholder OHO",
+ABCDEFGH
 );
 customParameters = (
 {
