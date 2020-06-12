@@ -54726,10 +54726,11 @@ width = 289;
 );
 instances = (
 {
-interpolationWeight = 1000;
+interpolationWeight = 180.821;
 interpolationWidth = 700;
 instanceInterpolations = {
-"7390BA8A-CD54-46A0-980C-73781B2212BF" = 1;
+"16FBD564-A0D0-4365-B77C-94A96DAC7D94" = 0.63964;
+"73BA353F-5B11-4DB0-9775-19E25D121032" = 0.36036;
 };
 name = "Mild Bold";
 },
