@@ -55684,11 +55684,11 @@ width = 289;
 instances = (
 {
 exports = 0;
-interpolationWeight = 520.479;
+interpolationWeight = 240.761;
 interpolationWidth = 700;
 instanceInterpolations = {
-"7390BA8A-CD54-46A0-980C-73781B2212BF" = 0.04096;
-"73BA353F-5B11-4DB0-9775-19E25D121032" = 0.95904;
+"16FBD564-A0D0-4365-B77C-94A96DAC7D94" = 0.51952;
+"73BA353F-5B11-4DB0-9775-19E25D121032" = 0.48048;
 };
 name = Preview;
 },
