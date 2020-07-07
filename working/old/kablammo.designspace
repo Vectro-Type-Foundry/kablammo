@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<designspace format="3">
+  <axes>
+    <axis default="1000" minimum="1" maximum="1000" name="weight" tag="wght">
+        <labelname xml:lang="en">Weight</labelname>
+    </axis>
+    <axis default="1000" minimum="1" maximum="1000" name="chaos" tag="chao">
+        <labelname xml:lang="en">Chaos</labelname>
+    </axis>
+  </axes>
+  <sources>
+    <source familyname="Kablammo v0.9" filename="./sources/Kablammo v0.9-Mild Light.ufo" name="Mild Light">
+      <lib copy="1"/>
+      <info copy="1"/>
+      <kerning copy="1"/>
+      <location>
+        <dimension name="weight" xvalue="1"/>
+        <dimension name="chaos" xvalue="1"/>
+      </location>
+    </source>
+    <source familyname="Kablammo v0.9" filename="./sources/Kablammo v0.9-Mild Bold.ufo" name="Mild Bold">
+      <location>
+        <dimension name="weight" xvalue="1000"/>
+        <dimension name="chaos" xvalue="1"/>
+      </location>
+    </source>
+    <source familyname="Kablammo v0.9" filename="./sources/Kablammo v0.9-Semichaotic Light.ufo" name="Semichaotic Light">
+      <location>
+        <dimension name="weight" xvalue="1"/>
+        <dimension name="chaos" xvalue="500"/>
+      </location>
+    </source>
+    <source familyname="Kablammo v0.9" filename="./sources/Kablammo v0.9-Semichaotic Bold.ufo" name="Semichaotic Bold">
+      <location>
+        <dimension name="weight" xvalue="1000"/>
+        <dimension name="chaos" xvalue="500"/>
+      </location>
+    </source>
+    <source familyname="Kablammo v0.9" filename="./sources/Kablammo v0.9-Wild Light.ufo" name="Wild Light">
+      <location>
+        <dimension name="weight" xvalue="1"/>
+        <dimension name="chaos" xvalue="1000"/>
+      </location>
+    </source>
+    <source familyname="Kablammo v0.9" filename="./sources/Kablammo v0.9-Wild Bold.ufo" name="Wild Bold">
+      <location>
+        <dimension name="weight" xvalue="1000"/>
+        <dimension name="chaos" xvalue="1000"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance familyname="Kablammo v0.9" filename="./instances/Kablammo-v0.9-WildBold.ufo" stylename="Wild Bold">
+      <info />
+      <kerning />
+      <location>
+        <dimension name="weight" xvalue="1000"/>
+        <dimension name="chaos" xvalue="1000"/>
+      </location>
+    </instance>
+  </instances>
+</designspace>
+

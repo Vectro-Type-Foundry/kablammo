@@ -2,7 +2,7 @@
 .appVersion = "1342";
 DisplayStrings = (
 "NUMBER\012HOH/Placeholder HOH/space OHO/Placeholder OHO",
-"ABCDEFGHIJ\012KLMNOPQR\012STUVWXYZ/space"
+VV
 );
 customParameters = (
 {
@@ -78355,11 +78355,11 @@ width = 289;
 instances = (
 {
 exports = 0;
-interpolationWeight = 840.159;
+interpolationWeight = 280.721;
 interpolationWidth = 700;
 instanceInterpolations = {
-"34BCA492-7EC7-4349-9547-1652F586AA1A" = 0.47857;
-"7390BA8A-CD54-46A0-980C-73781B2212BF" = 0.52143;
+"16FBD564-A0D0-4365-B77C-94A96DAC7D94" = 0.15747;
+"73BA353F-5B11-4DB0-9775-19E25D121032" = 0.84253;
 };
 name = Preview;
 },
