@@ -78463,11 +78463,11 @@ width = 289;
 instances = (
 {
 exports = 0;
-interpolationWeight = 980.019;
+interpolationWeight = 80.919;
 interpolationWidth = 700;
 instanceInterpolations = {
-"34BCA492-7EC7-4349-9547-1652F586AA1A" = 0.05982;
-"7390BA8A-CD54-46A0-980C-73781B2212BF" = 0.94018;
+"16FBD564-A0D0-4365-B77C-94A96DAC7D94" = 0.75928;
+"73BA353F-5B11-4DB0-9775-19E25D121032" = 0.24072;
 };
 name = Preview;
 },
