@@ -47021,7 +47021,7 @@ unicode = 0030;
 {
 color = 8;
 glyphname = one;
-lastChange = "2020-09-16 19:19:34 +0000";
+lastChange = "2020-09-21 19:01:51 +0000";
 layers = (
 {
 background = {
@@ -47849,9 +47849,9 @@ width = 487;
 unicode = 0031;
 },
 {
-color = 3;
+color = 8;
 glyphname = two;
-lastChange = "2020-09-16 14:11:42 +0000";
+lastChange = "2020-09-21 19:01:51 +0000";
 layers = (
 {
 background = {
@@ -55092,8 +55092,9 @@ width = 472;
 unicode = 0037;
 },
 {
+color = 8;
 glyphname = eight;
-lastChange = "2020-09-16 21:34:49 +0000";
+lastChange = "2020-09-21 19:01:51 +0000";
 layers = (
 {
 background = {
@@ -56183,9 +56184,9 @@ width = 544;
 unicode = 0038;
 },
 {
-color = 3;
+color = 8;
 glyphname = nine;
-lastChange = "2020-09-16 13:57:02 +0000";
+lastChange = "2020-09-21 19:01:51 +0000";
 layers = (
 {
 background = {
@@ -59571,9 +59572,9 @@ width = 377;
 );
 },
 {
-color = 3;
+color = 8;
 glyphname = two.ss01;
-lastChange = "2020-09-16 12:44:50 +0000";
+lastChange = "2020-09-21 19:01:51 +0000";
 layers = (
 {
 background = {
