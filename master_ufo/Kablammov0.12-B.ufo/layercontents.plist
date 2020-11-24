@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <array>
+    <array>
+      <string>public.default</string>
+      <string>glyphs</string>
+    </array>
+    <array>
+      <string>public.background</string>
+      <string>glyphs.public.background</string>
+    </array>
+    <array>
+      <string>Dot Motion {500}</string>
+      <string>glyphs.D_ot M_otion {500}</string>
+    </array>
+    <array>
+      <string>Dot Motion {500}.background</string>
+      <string>glyphs.D_ot M_otion {500}.background</string>
+    </array>
+    <array>
+      <string>Prevent Bulge {167}</string>
+      <string>glyphs.P_revent B_ulge {167}</string>
+    </array>
+    <array>
+      <string>Prevent Bulge {167}.background</string>
+      <string>glyphs.P_revent B_ulge {167}.background</string>
+    </array>
+    <array>
+      <string>Oct 12 20, 16:08</string>
+      <string>glyphs.O_ct 12 20, 16_08</string>
+    </array>
+    <array>
+      <string>Oct 12 20, 16:08.background</string>
+      <string>glyphs.O_ct 12 20, 16_08.background</string>
+    </array>
+    <array>
+      <string>Oct 12 20, 16:10</string>
+      <string>glyphs.O_ct 12 20, 16_10</string>
+    </array>
+    <array>
+      <string>Oct 12 20, 16:10.background</string>
+      <string>glyphs.O_ct 12 20, 16_10.background</string>
+    </array>
+    <array>
+      <string>Aug 21 20, 14:55</string>
+      <string>glyphs.A_ug 21 20, 14_55</string>
+    </array>
+    <array>
+      <string>Aug 21 20, 14:55.background</string>
+      <string>glyphs.A_ug 21 20, 14_55.background</string>
+    </array>
+    <array>
+      <string>Aug 28 20, 14:18</string>
+      <string>glyphs.A_ug 28 20, 14_18</string>
+    </array>
+    <array>
+      <string>Aug 28 20, 14:18.background</string>
+      <string>glyphs.A_ug 28 20, 14_18.background</string>
+    </array>
+    <array>
+      <string>Aug 21 20, 12:26</string>
+      <string>glyphs.A_ug 21 20, 12_26</string>
+    </array>
+    <array>
+      <string>Aug 21 20, 12:26.background</string>
+      <string>glyphs.A_ug 21 20, 12_26.background</string>
+    </array>
+    <array>
+      <string>Oct 14 20, 11:18</string>
+      <string>glyphs.O_ct 14 20, 11_18</string>
+    </array>
+    <array>
+      <string>Oct 14 20, 11:18.background</string>
+      <string>glyphs.O_ct 14 20, 11_18.background</string>
+    </array>
+    <array>
+      <string>Oct 19 20, 19:33</string>
+      <string>glyphs.O_ct 19 20, 19_33</string>
+    </array>
+    <array>
+      <string>Oct 19 20, 19:33.background</string>
+      <string>glyphs.O_ct 19 20, 19_33.background</string>
+    </array>
+    <array>
+      <string>Spot movement and magic {550}</string>
+      <string>glyphs.S_pot movement and magic {550}</string>
+    </array>
+    <array>
+      <string>Spot movement and magic {550}.background</string>
+      <string>glyphs.S_pot movement and magic {550}.background</string>
+    </array>
+    <array>
+      <string>Oct 1 20, 14:57</string>
+      <string>glyphs.O_ct 1 20, 14_57</string>
+    </array>
+    <array>
+      <string>Oct 1 20, 14:57.background</string>
+      <string>glyphs.O_ct 1 20, 14_57.background</string>
+    </array>
+  </array>
+</plist>

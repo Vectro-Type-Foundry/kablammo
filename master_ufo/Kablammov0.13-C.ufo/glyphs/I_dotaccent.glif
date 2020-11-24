@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Idotaccent" format="2">
+  <advance width="474"/>
+  <unicode hex="0130"/>
+  <anchor x="230" y="-26" name="bottom"/>
+  <anchor x="346" y="10" name="ogonek"/>
+  <anchor x="506" y="619" name="top"/>
+  <outline>
+    <component base="I"/>
+    <component base="dotaccentcomb.case" xOffset="150" yOffset="-8"/>
+  </outline>
+</glyph>

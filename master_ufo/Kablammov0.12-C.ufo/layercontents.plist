@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <array>
+    <array>
+      <string>public.default</string>
+      <string>glyphs</string>
+    </array>
+    <array>
+      <string>public.background</string>
+      <string>glyphs.public.background</string>
+    </array>
+    <array>
+      <string>Prevent Bulge {833}</string>
+      <string>glyphs.P_revent B_ulge {833}</string>
+    </array>
+    <array>
+      <string>Prevent Bulge {833}.background</string>
+      <string>glyphs.P_revent B_ulge {833}.background</string>
+    </array>
+    <array>
+      <string>Aug 28 20, 14:14</string>
+      <string>glyphs.A_ug 28 20, 14_14</string>
+    </array>
+    <array>
+      <string>Aug 28 20, 14:14.background</string>
+      <string>glyphs.A_ug 28 20, 14_14.background</string>
+    </array>
+    <array>
+      <string>Dot placement {832}</string>
+      <string>glyphs.D_ot placement {832}</string>
+    </array>
+    <array>
+      <string>Dot placement {832}.background</string>
+      <string>glyphs.D_ot placement {832}.background</string>
+    </array>
+    <array>
+      <string>Spot Motion {839}</string>
+      <string>glyphs.S_pot M_otion {839}</string>
+    </array>
+    <array>
+      <string>Spot Motion {839}.background</string>
+      <string>glyphs.S_pot M_otion {839}.background</string>
+    </array>
+    <array>
+      <string>Spot movement {833}</string>
+      <string>glyphs.S_pot movement {833}</string>
+    </array>
+    <array>
+      <string>Spot movement {833}.background</string>
+      <string>glyphs.S_pot movement {833}.background</string>
+    </array>
+    <array>
+      <string>Oct 19 20, 19:33</string>
+      <string>glyphs.O_ct 19 20, 19_33</string>
+    </array>
+    <array>
+      <string>Oct 19 20, 19:33.background</string>
+      <string>glyphs.O_ct 19 20, 19_33.background</string>
+    </array>
+    <array>
+      <string>Oct 13 20, 15:20</string>
+      <string>glyphs.O_ct 13 20, 15_20</string>
+    </array>
+    <array>
+      <string>Oct 13 20, 15:20.background</string>
+      <string>glyphs.O_ct 13 20, 15_20.background</string>
+    </array>
+    <array>
+      <string>Sep 29 20, 15:32</string>
+      <string>glyphs.S_ep 29 20, 15_32</string>
+    </array>
+    <array>
+      <string>Sep 29 20, 15:32.background</string>
+      <string>glyphs.S_ep 29 20, 15_32.background</string>
+    </array>
+  </array>
+</plist>
