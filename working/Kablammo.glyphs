@@ -5,7 +5,8 @@ DisplayStrings = (
 "/dieresiscomb/dotaccentcomb/gravecomb/acutecomb/hungarumlautcomb/circumflexcomb/caroncomb/brevecomb/ringcomb/tildecomb/macroncomb/commaturnedabovecomb/commaaccentcomb/cedillacomb/ogonekcomb",
 "/circumflex.alt1",
 "`",
-Y
+Y,
+"/dieresiscomb"
 );
 customParameters = (
 {
@@ -112600,17 +112601,13 @@ unicode = 1F441;
 {
 color = 9;
 glyphname = dieresiscomb;
-lastChange = "2020-11-25 00:16:43 +0000";
+lastChange = "2020-11-25 00:54:51 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{206, 700}";
-},
-{
-name = bottom;
-position = "{206, 722}";
 },
 {
 name = top;
@@ -112707,10 +112704,6 @@ name = _top;
 position = "{206, 700}";
 },
 {
-name = bottom;
-position = "{206, 721}";
-},
-{
 name = top;
 position = "{204, 898}";
 }
@@ -112805,10 +112798,6 @@ name = _top;
 position = "{206, 700}";
 },
 {
-name = bottom;
-position = "{206, 722}";
-},
-{
 name = top;
 position = "{208, 904}";
 }
@@ -112901,10 +112890,6 @@ anchors = (
 {
 name = _top;
 position = "{206, 700}";
-},
-{
-name = bottom;
-position = "{199, 722}";
 },
 {
 name = top;
