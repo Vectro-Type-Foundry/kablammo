@@ -7,7 +7,8 @@ DisplayStrings = (
 "`",
 Y,
 "/dieresiscomb",
-"/dotaccentcomb/gravecomb/acutecomb/hungarumlautcomb/circumflexcomb/caroncomb/brevecomb/ringcomb/tildecomb/macroncomb/commaturnedabovecomb/commaaccentcomb/cedillacomb/ogonekcomb/circumflex.alt"
+"/dotaccentcomb/gravecomb/acutecomb/hungarumlautcomb/circumflexcomb/caroncomb/brevecomb/ringcomb/tildecomb/macroncomb/commaturnedabovecomb/commaaccentcomb/cedillacomb/ogonekcomb/circumflex.alt",
+"/circumflexcomb/Wcircumflex"
 );
 customParameters = (
 {
@@ -44418,7 +44419,7 @@ unicode = "1E82,1E83";
 },
 {
 glyphname = Wcircumflex;
-lastChange = "2020-11-24 23:52:11 +0000";
+lastChange = "2020-11-25 01:15:57 +0000";
 layers = (
 {
 background = {
@@ -44437,8 +44438,8 @@ components = (
 name = W;
 },
 {
-name = circumflexcomb;
-transform = "{1, 0, 0, 1, 230, -13}";
+name = circumflex.alt;
+transform = "{1, 0, 0, 1, 232, -13}";
 }
 );
 layerId = "7390BA8A-CD54-46A0-980C-73781B2212BF";
@@ -44461,8 +44462,8 @@ components = (
 name = W;
 },
 {
-name = circumflexcomb;
-transform = "{1, 0, 0, 1, 195, -15}";
+name = circumflex.alt;
+transform = "{1, 0, 0, 1, 197, -15}";
 }
 );
 layerId = "16FBD564-A0D0-4365-B77C-94A96DAC7D94";
@@ -44485,8 +44486,8 @@ components = (
 name = W;
 },
 {
-name = circumflexcomb;
-transform = "{1, 0, 0, 1, 236, -95}";
+name = circumflex.alt;
+transform = "{1, 0, 0, 1, 238, -95}";
 }
 );
 layerId = "73BA353F-5B11-4DB0-9775-19E25D121032";
@@ -44509,8 +44510,8 @@ components = (
 name = W;
 },
 {
-name = circumflexcomb;
-transform = "{1, 0, 0, 1, 235, -55}";
+name = circumflex.alt;
+transform = "{1, 0, 0, 1, 237, -55}";
 }
 );
 layerId = "34BCA492-7EC7-4349-9547-1652F586AA1A";
