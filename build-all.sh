@@ -22,8 +22,8 @@ mkdir -p $output_path $static_output_path $variable_output_path
 
 # Generate VFs
 VF_full_output_path="${variable_output_path}/Kablammo-Variable-v${version}.ttf"
-fontmake -g $glyphsSource -o variable --output-path $VF_full_output_path --feature-writer None
-# fontmake -g $glyphsSource -o variable --output-path $VF_full_output_path
+# fontmake -g $glyphsSource -o variable --output-path $VF_full_output_path --feature-writer None
+fontmake -g $glyphsSource -o variable --output-path $VF_full_output_path
 
 
 # Generate OTFS
