@@ -27,4 +27,4 @@ fontmake -g $glyphsSource -o variable --output-path $VF_full_output_path
 
 
 # Generate OTFS
-fontmake -g $glyphsSource -o otf -i --output-dir $static_output_path
+# fontmake -g $glyphsSource -o otf -i --output-dir $static_output_path

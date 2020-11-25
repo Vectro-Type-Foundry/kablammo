@@ -6,7 +6,8 @@ DisplayStrings = (
 "/circumflex.alt1",
 "`",
 Y,
-"/dieresiscomb"
+"/dieresiscomb",
+"/dotaccentcomb/gravecomb/acutecomb/hungarumlautcomb/circumflexcomb/caroncomb/brevecomb/ringcomb/tildecomb/macroncomb/commaturnedabovecomb/commaaccentcomb/cedillacomb/ogonekcomb/circumflex.alt1"
 );
 customParameters = (
 {
@@ -112985,17 +112986,13 @@ unicode = 0308;
 {
 color = 9;
 glyphname = dotaccentcomb;
-lastChange = "2020-11-25 00:16:20 +0000";
+lastChange = "2020-11-25 00:56:50 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{110, 700}";
-},
-{
-name = bottom;
-position = "{109, 719}";
 },
 {
 name = top;
@@ -113058,10 +113055,6 @@ name = _top;
 position = "{110, 700}";
 },
 {
-name = bottom;
-position = "{109, 719}";
-},
-{
 name = top;
 position = "{110, 908}";
 }
@@ -113120,10 +113113,6 @@ anchors = (
 {
 name = _top;
 position = "{110, 700}";
-},
-{
-name = bottom;
-position = "{109, 719}";
 },
 {
 name = top;
@@ -113186,10 +113175,6 @@ name = _top;
 position = "{110, 700}";
 },
 {
-name = bottom;
-position = "{109, 719}";
-},
-{
 name = top;
 position = "{109, 882}";
 }
@@ -113249,17 +113234,13 @@ unicode = 0307;
 {
 color = 9;
 glyphname = gravecomb;
-lastChange = "2020-11-25 00:17:03 +0000";
+lastChange = "2020-11-25 00:56:58 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{208, 700}";
-},
-{
-name = bottom;
-position = "{206, 712}";
 },
 {
 name = top;
@@ -113324,10 +113305,6 @@ name = _top;
 position = "{208, 700}";
 },
 {
-name = bottom;
-position = "{206, 712}";
-},
-{
 name = top;
 position = "{209, 953}";
 }
@@ -113388,10 +113365,6 @@ anchors = (
 {
 name = _top;
 position = "{219, 703}";
-},
-{
-name = bottom;
-position = "{217, 721}";
 },
 {
 name = top;
@@ -113456,10 +113429,6 @@ name = _top;
 position = "{212, 701}";
 },
 {
-name = bottom;
-position = "{211, 718}";
-},
-{
 name = top;
 position = "{203, 956}";
 }
@@ -113521,17 +113490,13 @@ unicode = 0300;
 {
 color = 9;
 glyphname = acutecomb;
-lastChange = "2020-11-25 00:17:20 +0000";
+lastChange = "2020-11-25 00:57:06 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{110, 700}";
-},
-{
-name = bottom;
-position = "{109, 712}";
 },
 {
 name = top;
@@ -113596,10 +113561,6 @@ name = _top;
 position = "{110, 700}";
 },
 {
-name = bottom;
-position = "{109, 712}";
-},
-{
 name = top;
 position = "{112, 937}";
 }
@@ -113660,10 +113621,6 @@ anchors = (
 {
 name = _top;
 position = "{110, 700}";
-},
-{
-name = bottom;
-position = "{109, 712}";
 },
 {
 name = top;
@@ -113728,10 +113685,6 @@ name = _top;
 position = "{110, 700}";
 },
 {
-name = bottom;
-position = "{110, 715}";
-},
-{
 name = top;
 position = "{110, 950}";
 }
@@ -113793,17 +113746,13 @@ unicode = 0301;
 {
 color = 9;
 glyphname = hungarumlautcomb;
-lastChange = "2020-11-25 00:20:59 +0000";
+lastChange = "2020-11-25 00:57:14 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{190, 700}";
-},
-{
-name = bottom;
-position = "{192, 715}";
 },
 {
 name = top;
@@ -113904,10 +113853,6 @@ name = _top;
 position = "{190, 700}";
 },
 {
-name = bottom;
-position = "{190, 715}";
-},
-{
 name = top;
 position = "{202, 993}";
 }
@@ -114004,10 +113949,6 @@ anchors = (
 {
 name = _top;
 position = "{190, 700}";
-},
-{
-name = bottom;
-position = "{190, 715}";
 },
 {
 name = top;
@@ -114108,10 +114049,6 @@ name = _top;
 position = "{190, 700}";
 },
 {
-name = bottom;
-position = "{190, 715}";
-},
-{
 name = top;
 position = "{199, 951}";
 }
@@ -114209,17 +114146,13 @@ unicode = 030B;
 {
 color = 9;
 glyphname = circumflexcomb;
-lastChange = "2020-11-25 00:21:25 +0000";
+lastChange = "2020-11-25 00:57:26 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{214, 700}";
-},
-{
-name = bottom;
-position = "{220, 716}";
 },
 {
 name = top;
@@ -114304,10 +114237,6 @@ name = _top;
 position = "{214, 700}";
 },
 {
-name = bottom;
-position = "{220, 716}";
-},
-{
 name = top;
 position = "{228, 968}";
 }
@@ -114388,10 +114317,6 @@ anchors = (
 {
 name = _top;
 position = "{214, 700}";
-},
-{
-name = bottom;
-position = "{219, 716}";
 },
 {
 name = top;
@@ -114476,10 +114401,6 @@ name = _top;
 position = "{214, 700}";
 },
 {
-name = bottom;
-position = "{220, 716}";
-},
-{
 name = top;
 position = "{228, 941}";
 }
@@ -114561,17 +114482,13 @@ unicode = 0302;
 {
 color = 9;
 glyphname = caroncomb;
-lastChange = "2020-11-25 00:21:37 +0000";
+lastChange = "2020-11-25 00:57:34 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{210, 700}";
-},
-{
-name = bottom;
-position = "{211, 716}";
 },
 {
 name = top;
@@ -114608,10 +114525,6 @@ name = _top;
 position = "{210, 700}";
 },
 {
-name = bottom;
-position = "{211, 716}";
-},
-{
 name = top;
 position = "{211, 921}";
 }
@@ -114644,10 +114557,6 @@ anchors = (
 {
 name = _top;
 position = "{210, 700}";
-},
-{
-name = bottom;
-position = "{211, 716}";
 },
 {
 name = top;
@@ -114684,10 +114593,6 @@ name = _top;
 position = "{210, 700}";
 },
 {
-name = bottom;
-position = "{211, 716}";
-},
-{
 name = top;
 position = "{210, 909}";
 }
@@ -114721,17 +114626,13 @@ unicode = 030C;
 {
 color = 9;
 glyphname = brevecomb;
-lastChange = "2020-11-25 00:21:58 +0000";
+lastChange = "2020-11-25 00:57:42 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{193, 700}";
-},
-{
-name = bottom;
-position = "{192, 716}";
 },
 {
 name = top;
@@ -114812,10 +114713,6 @@ name = _top;
 position = "{193, 700}";
 },
 {
-name = bottom;
-position = "{191, 716}";
-},
-{
 name = top;
 position = "{197, 931}";
 }
@@ -114892,10 +114789,6 @@ anchors = (
 {
 name = _top;
 position = "{193, 700}";
-},
-{
-name = bottom;
-position = "{191, 716}";
 },
 {
 name = top;
@@ -114976,10 +114869,6 @@ name = _top;
 position = "{193, 700}";
 },
 {
-name = bottom;
-position = "{192, 716}";
-},
-{
 name = top;
 position = "{198, 951}";
 }
@@ -115057,17 +114946,13 @@ unicode = 0306;
 {
 color = 9;
 glyphname = ringcomb;
-lastChange = "2020-11-25 00:22:14 +0000";
+lastChange = "2020-11-25 00:57:49 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{150, 700}";
-},
-{
-name = bottom;
-position = "{147, 716}";
 },
 {
 name = top;
@@ -115164,10 +115049,6 @@ name = _top;
 position = "{150, 700}";
 },
 {
-name = bottom;
-position = "{147, 716}";
-},
-{
 name = top;
 position = "{152, 961}";
 }
@@ -115260,10 +115141,6 @@ anchors = (
 {
 name = _top;
 position = "{150, 700}";
-},
-{
-name = bottom;
-position = "{149, 716}";
 },
 {
 name = top;
@@ -115360,10 +115237,6 @@ name = _top;
 position = "{150, 700}";
 },
 {
-name = bottom;
-position = "{148, 716}";
-},
-{
 name = top;
 position = "{148, 961}";
 }
@@ -115457,17 +115330,13 @@ unicode = 030A;
 {
 color = 9;
 glyphname = tildecomb;
-lastChange = "2020-11-25 00:22:27 +0000";
+lastChange = "2020-11-25 00:58:00 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{201, 700}";
-},
-{
-name = bottom;
-position = "{199, 716}";
 },
 {
 name = top;
@@ -115560,10 +115429,6 @@ name = _top;
 position = "{201, 700}";
 },
 {
-name = bottom;
-position = "{201, 716}";
-},
-{
 name = top;
 position = "{201, 879}";
 }
@@ -115652,10 +115517,6 @@ anchors = (
 {
 name = _top;
 position = "{201, 700}";
-},
-{
-name = bottom;
-position = "{201, 716}";
 },
 {
 name = top;
@@ -115748,10 +115609,6 @@ name = _top;
 position = "{201, 700}";
 },
 {
-name = bottom;
-position = "{202, 716}";
-},
-{
 name = top;
 position = "{199, 889}";
 }
@@ -115841,17 +115698,13 @@ unicode = 0303;
 {
 color = 9;
 glyphname = macroncomb;
-lastChange = "2020-11-25 00:22:38 +0000";
+lastChange = "2020-11-25 00:58:06 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{185, 700}";
-},
-{
-name = bottom;
-position = "{185, 716}";
 },
 {
 name = top;
@@ -115916,10 +115769,6 @@ name = _top;
 position = "{185, 700}";
 },
 {
-name = bottom;
-position = "{184, 716}";
-},
-{
 name = top;
 position = "{189, 868}";
 }
@@ -115980,10 +115829,6 @@ anchors = (
 {
 name = _top;
 position = "{185, 700}";
-},
-{
-name = bottom;
-position = "{185, 716}";
 },
 {
 name = top;
@@ -116048,10 +115893,6 @@ name = _top;
 position = "{185, 700}";
 },
 {
-name = bottom;
-position = "{185, 716}";
-},
-{
 name = top;
 position = "{189, 853}";
 }
@@ -116113,17 +115954,13 @@ unicode = 0304;
 {
 color = 9;
 glyphname = commaturnedabovecomb;
-lastChange = "2020-11-25 00:22:56 +0000";
+lastChange = "2020-11-25 00:58:14 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{119, 700}";
-},
-{
-name = bottom;
-position = "{119, 716}";
 },
 {
 name = top;
@@ -116160,10 +115997,6 @@ name = _top;
 position = "{119, 700}";
 },
 {
-name = bottom;
-position = "{118, 716}";
-},
-{
 name = top;
 position = "{123, 1086}";
 }
@@ -116196,10 +116029,6 @@ anchors = (
 {
 name = _top;
 position = "{119, 700}";
-},
-{
-name = bottom;
-position = "{119, 716}";
 },
 {
 name = top;
@@ -116236,10 +116065,6 @@ name = _top;
 position = "{119, 700}";
 },
 {
-name = bottom;
-position = "{119, 716}";
-},
-{
 name = top;
 position = "{122, 1093}";
 }
@@ -116273,7 +116098,7 @@ unicode = 0312;
 {
 color = 9;
 glyphname = commaaccentcomb;
-lastChange = "2020-11-25 00:23:37 +0000";
+lastChange = "2020-11-25 00:58:42 +0000";
 layers = (
 {
 anchors = (
@@ -116284,10 +116109,6 @@ position = "{109, 0}";
 {
 name = bottom;
 position = "{102, -403}";
-},
-{
-name = top;
-position = "{111, -22}";
 }
 );
 background = {
@@ -116322,10 +116143,6 @@ position = "{109, 0}";
 {
 name = bottom;
 position = "{104, -456}";
-},
-{
-name = top;
-position = "{108, -44}";
 }
 );
 background = {
@@ -116360,10 +116177,6 @@ position = "{109, 0}";
 {
 name = bottom;
 position = "{108, -430}";
-},
-{
-name = top;
-position = "{120, -17}";
 }
 );
 background = {
@@ -116398,10 +116211,6 @@ position = "{109, 0}";
 {
 name = bottom;
 position = "{97, -409}";
-},
-{
-name = top;
-position = "{108, -24}";
 }
 );
 background = {
@@ -117408,17 +117217,13 @@ unicode = 0060;
 {
 color = 9;
 glyphname = circumflex.alt1;
-lastChange = "2020-11-25 00:26:22 +0000";
+lastChange = "2020-11-25 00:58:25 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{212, 700}";
-},
-{
-name = bottom;
-position = "{210, 727}";
 },
 {
 name = top;
@@ -117497,10 +117302,6 @@ name = _top;
 position = "{212, 700}";
 },
 {
-name = bottom;
-position = "{211, 745}";
-},
-{
 name = top;
 position = "{219, 999}";
 }
@@ -117577,10 +117378,6 @@ name = _top;
 position = "{212, 700}";
 },
 {
-name = bottom;
-position = "{211, 745}";
-},
-{
 name = top;
 position = "{209, 959}";
 }
@@ -117655,10 +117452,6 @@ anchors = (
 {
 name = _top;
 position = "{212, 700}";
-},
-{
-name = bottom;
-position = "{203, 725}";
 },
 {
 name = top;
