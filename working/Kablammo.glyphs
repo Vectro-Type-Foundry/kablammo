@@ -26,6 +26,10 @@ value = "Kablammo Variable v0.14";
 {
 name = "EditView Line Height";
 value = 1000;
+},
+{
+name = "Disable Subroutines";
+value = 1;
 }
 );
 date = "2020-10-05 21:19:09 +0000";

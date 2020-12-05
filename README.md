@@ -24,7 +24,8 @@ Generate
 
 
 ## Production Notes
-- Brace layers that share axis values must have the same name, and belong to the same parent master, for fontmake generation. Please use the convention of `166 {166}`, when naming brace layers. And assign them to the parent master in a way that makes sense for the axis values. For example, axis value of `166` is greater than master `A`(1), and less than `B`(333), so the brace layer `166 {166}`, should belong to `A`. `500 {500}` should belong to master `B`.
+- Brace layers that share axis values must have the same name, and belong to the same parent master, for fontmake generation. Please use the convention of `166 {166}`, when naming brace layers. 
+- Brace layers must be assigned to the parent master in a way that makes sense for the axis values. For example, axis value of `166` is greater than master `A`(1), and less than `B`(333), so the brace layer `166 {166}`, should belong to `A`. `500 {500}` should belong to master `B`.
 
 ## Design notes
 Will move this to readme eventually, but for now, it's here:
