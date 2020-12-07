@@ -227346,7 +227346,7 @@ associatedMasterId = "16FBD564-A0D0-4365-B77C-94A96DAC7D94";
 backgroundImage = {
 alpha = 10;
 crop = "{{0, 0}, {358, 376}}";
-imagePath = "../../FA1C4F1F-53CC-4DD0-8556-3DEF3DCC870B.PNG";
+imagePath = "/Users/FA1C4F1F-53CC-4DD0-8556-3DEF3DCC870B.PNG";
 locked = "1";
 transform = "{2.173, 0, 0, 2.173, -40, -60}";
 };
@@ -227675,7 +227675,7 @@ associatedMasterId = "16FBD564-A0D0-4365-B77C-94A96DAC7D94";
 backgroundImage = {
 alpha = 10;
 crop = "{{0, 0}, {358, 376}}";
-imagePath = "../../FA1C4F1F-53CC-4DD0-8556-3DEF3DCC870B.PNG";
+imagePath = "/Users/FA1C4F1F-53CC-4DD0-8556-3DEF3DCC870B.PNG";
 locked = "1";
 transform = "{2.173, 0, 0, 2.173, -40, -60}";
 };
@@ -230918,7 +230918,7 @@ associatedMasterId = "16FBD564-A0D0-4365-B77C-94A96DAC7D94";
 backgroundImage = {
 alpha = 10;
 crop = "{{0, 0}, {358, 376}}";
-imagePath = "../../FA1C4F1F-53CC-4DD0-8556-3DEF3DCC870B.PNG";
+imagePath = "/Users/FA1C4F1F-53CC-4DD0-8556-3DEF3DCC870B.PNG";
 locked = "1";
 transform = "{2.173, 0, 0, 2.173, -40, -60}";
 };
@@ -231247,7 +231247,7 @@ associatedMasterId = "16FBD564-A0D0-4365-B77C-94A96DAC7D94";
 backgroundImage = {
 alpha = 10;
 crop = "{{0, 0}, {358, 376}}";
-imagePath = "../../FA1C4F1F-53CC-4DD0-8556-3DEF3DCC870B.PNG";
+imagePath = "/Users/FA1C4F1F-53CC-4DD0-8556-3DEF3DCC870B.PNG";
 locked = "1";
 transform = "{2.173, 0, 0, 2.173, -40, -60}";
 };
