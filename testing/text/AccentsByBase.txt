@@ -1,0 +1,34 @@
+AÁĂẮẶẰẲẴÂẤẬẦẨẪȀÄẠÀẢȂĀĄÅǺÃ
+ÆÆǼ
+/C.topless ĆČĈĊ
+/C.bottomless Ç
+/C.toplessbottomless Ḉ
+DĎḌḎ
+/D.midless ÐĐ
+/E.topless ÉĔĚÊẾỀỂỄȄËĖÈẺȆĒḖḔẼ
+/E.bottomless ẸĘ
+/E.toplessbottomless ḜỆ
+/G.topless ĞǦĜĠḠ
+GĢ
+HḪĤḤ
+/H.midless Ħ
+IÍĬÎȈÏḮİỊÌỈȊĪĮĨ
+JĴ
+KĶ
+LĹĻḶḺ
+/L.midless ĽŁĿL/L.midless/periodcentered.loclCAT L
+/M.bottomless Ṃ
+NŃŇṄÑ
+/N.nodot ŅṆṈ
+OÓŎÔỐỘỒỔỖȌÖȪȰỌÒỎƠỚỢỜỞỠŐȎŌṒṐǪÕṌṎȬ
+ØǾ
+RŔŘŖȐṚȒṞ
+SŚṤŠṦŜṠ
+/S.bottomless ṨŞȘṢ
+TŤŢȚṬṮ
+/T.midless Ŧ
+UÚŬÛȔÜÙỦƯỨỰỪỬỮŰȖŪṺŮŨṸỤ
+/W.topless ẂŴẄẀ
+YÝŶŸẎỴỲỶȲỸ
+/Z.topless ŹŻŽǄ
+/Z.bottomless Ẓ
