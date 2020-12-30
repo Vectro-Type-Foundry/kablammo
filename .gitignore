@@ -3,3 +3,4 @@
 venv/*
 instance_ufo/*
 master_ufo/*
+.python-version
