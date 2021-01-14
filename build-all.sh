@@ -16,14 +16,14 @@ else
   static_output_path="${output_path}/static"
   variable_output_path="${output_path}/variable"
 
-  # mkdir -p $output_path $static_output_path $variable_output_path 
+  mkdir -p $output_path $static_output_path $variable_output_path 
 
   # Generate VFs
   VF_full_output_path="${variable_output_path}/Kablammo-Variable-v${version}.ttf"
-  # fontmake -g $glyphsSource -o variable --output-path $VF_full_output_path
+  fontmake -g $glyphsSource -o variable --output-path $VF_full_output_path
 
   # Generate OTFS
-  # fontmake -g $glyphsSource -o otf -i --output-dir $static_output_path 
+  fontmake -g $glyphsSource -o otf -i --output-dir $static_output_path 
 
 
   # fix Hinting
