@@ -1,3 +1,5 @@
 afdko
 fontmake
 fontbakery
+gftools
+Pillow
