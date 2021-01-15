@@ -19,7 +19,7 @@ Setup (optional but recommended method to install dependences)
 Generate
 1. In terminal `cd` to project directory
 2. run `source venv/bin/activate`
-3. run `sh build-all.sh 0.13`. (use desired version number in place of `0.13`)
+3. run `sh sources/build-all.sh 0.13`. (use desired version number in place of `0.13`)
 4. If successful, generated fonts should show up in `exports` directory under the specified version.
 
 
