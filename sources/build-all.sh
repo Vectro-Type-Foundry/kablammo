@@ -17,7 +17,6 @@ else
   variable_output_path="${output_path}/variable"
 
   rm -rf $output_path
-
   mkdir -p $output_path $static_output_path $variable_output_path 
 
   echo "generate variable font"
@@ -30,11 +29,18 @@ else
   echo "add stat table"
   gftools gen-stat $VF_full_output_path --src sources/scripts/stat.yaml --inplace
 
-  echo "fix gasp table"
-  gftools fix-nonhinting $VF_full_output_path $VF_full_output_path
+  echo "misc table fixes"
+  function fixMiscTables {
+    gftools fix-nonhinting $1 $1
+    gftools fix-fstype $1
+    mv $1.fix $1 2>/dev/null
+    gftools fix-dsig -f $1
+  }
 
+  fixMiscTables $VF_full_output_path
   for filename in $static_output_path/*.otf; do
-    gftools fix-nonhinting $filename $filename
+
+    fixMiscTables $filename
   done
 
   # cleanup 
