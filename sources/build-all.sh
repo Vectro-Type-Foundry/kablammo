@@ -12,31 +12,38 @@ else
 
   glyphsSource="sources/Kablammo.glyphs"
 
-  output_path="fonts/Kablammo-v${version}"
+  output_path="fonts/"
   static_output_path="${output_path}/static"
   variable_output_path="${output_path}/variable"
 
+  rm -rf $output_path
+
   mkdir -p $output_path $static_output_path $variable_output_path 
 
-  # Generate VFs
+  echo "generate variable font"
   VF_full_output_path="${variable_output_path}/Kablammo-Variable-v${version}.ttf"
-  # fontmake -g $glyphsSource -o variable --output-path $VF_full_output_path
+  fontmake -g $glyphsSource -o variable --output-path $VF_full_output_path
 
-  # Generate OTFS
-  # fontmake -g $glyphsSource -o otf -i --output-dir $static_output_path 
+  echo "generate otfs"
+  fontmake -g $glyphsSource -o otf -i --output-dir $static_output_path 
 
-
-  # add stat table
-
+  echo "add stat table"
   gftools gen-stat $VF_full_output_path --src sources/scripts/stat.yaml --inplace
 
-  # fix Hinting
-  # gftools fix-nonhinting $VF_full_output_path $VF_full_output_path
-  # rm "${VF_full_output_path/.ttf/-backup-fonttools-prep-gasp.ttf}"
-  # for filename in $static_output_path/*.otf; do
-    # gftools fix-nonhinting $filename $filename
-    # rm "${filename/.otf/-backup-fonttools-prep-gasp.otf}"
-  # done
+  echo "fix gasp table"
+  gftools fix-nonhinting $VF_full_output_path $VF_full_output_path
+
+  for filename in $static_output_path/*.otf; do
+    gftools fix-nonhinting $filename $filename
+  done
+
+  # cleanup 
+  echo "cleanup"
+  rm -rf $static_output_path/*prep-gasp.otf
+  rm -rf $variable_output_path/*prep-gasp.ttf
+  rm -rf fonts/variable/*prep-gasp.ttf
+  rm -rf instance_ufo
+  rm -rf master_ufo
 fi
 
 
