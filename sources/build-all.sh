@@ -20,7 +20,7 @@ else
   mkdir -p $output_path $static_output_path $variable_output_path 
 
   echo "generate variable font"
-  VF_full_output_path="${variable_output_path}/Kablammo${version}[move].ttf"
+  VF_full_output_path="${variable_output_path}/Kablammov${version}[move].ttf"
   fontmake -g $glyphsSource -o variable --output-path $VF_full_output_path
 
   echo "generate otfs"
@@ -46,6 +46,10 @@ else
     fixMiscTables $filename
   done
 
+  rm -rf $static_output_path/otf/*prep-gasp.otf
+  rm -rf $static_output_path/ttf/*prep-gasp.ttf
+  rm -rf $variable_output_path/*prep-gasp.ttf
+
 
   # webfonts
   function generateWebfonts {
@@ -66,10 +70,6 @@ else
 
   # cleanup 
   echo "cleanup"
-  rm -rf $static_output_path/otf/*prep-gasp.otf
-  rm -rf $static_output_path/ttf/*prep-gasp.ttf
-  rm -rf $variable_output_path/*prep-gasp.ttf
-  rm -rf fonts/variable/*prep-gasp.ttf
   rm -rf instance_ufo
   rm -rf master_ufo
 fi

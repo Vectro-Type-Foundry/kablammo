@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 
-fontbakery check-googlefonts fonts/variable/*.ttf  --json fontbakery-report.json
+fontbakery check-googlefonts fonts/*.ttf  --json fontbakery-report.json
