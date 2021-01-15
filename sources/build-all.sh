@@ -20,7 +20,7 @@ else
   mkdir -p $output_path $static_output_path $variable_output_path 
 
   echo "generate variable font"
-  VF_full_output_path="${variable_output_path}/Kablammo-Variable-v${version}.ttf"
+  VF_full_output_path="${variable_output_path}/Kablammo${version}[move].ttf"
   fontmake -g $glyphsSource -o variable --output-path $VF_full_output_path
 
   echo "generate otfs"
