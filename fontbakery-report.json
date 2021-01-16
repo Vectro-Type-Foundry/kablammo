@@ -1,11 +1,11 @@
 {
     "result": {
         "ERROR": 2,
-        "FAIL": 5,
+        "FAIL": 3,
         "INFO": 7,
-        "PASS": 82,
+        "PASS": 85,
         "SKIP": 96,
-        "WARN": 3
+        "WARN": 2
     },
     "sections": [
         {
@@ -2819,18 +2819,13 @@
                     ],
                     "logs": [
                         {
-                            "message": "OS/2.usWinAscent value should be equal or greater than 1139, but got 1000 instead [code: ascent]",
-                            "status": "FAIL",
-                            "traceback": null
-                        },
-                        {
-                            "message": "OS/2.usWinDescent value should be equal or greater than 284, but got 200 instead. [code: descent]",
-                            "status": "FAIL",
+                            "message": "OS/2 usWinAscent & usWinDescent values look good!",
+                            "status": "PASS",
                             "traceback": null
                         }
                     ],
                     "rationale": "\n        A font's winAscent and winDescent values should be greater than the head table's yMax, abs(yMin) values. If they are less than these values, clipping can occur on Windows platforms (https://github.com/RedHatBrand/Overpass/issues/33).\n\n        If the font includes tall/deep writing systems such as Arabic or Devanagari, the winAscent and winDescent can be greater than the yMax and abs(yMin) to accommodate vowel marks.\n\n        When the win Metrics are significantly greater than the upm, the linespacing can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7 (Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead. This means the font developer can control the linespacing with the typo values, whilst avoiding clipping by setting the win values to values greater than the yMax and abs(yMin).\n    ",
-                    "result": "FAIL"
+                    "result": "PASS"
                 },
                 {
                     "description": "Checking OS/2 Metrics match hhea Metrics.",
@@ -2847,13 +2842,13 @@
                     ],
                     "logs": [
                         {
-                            "message": "OS/2 sTypoAscender (800) and hhea ascent (1000) must be equal. [code: ascender]",
-                            "status": "FAIL",
+                            "message": "OS/2.sTypoAscender/Descender values match hhea.ascent/descent.",
+                            "status": "PASS",
                             "traceback": null
                         }
                     ],
                     "rationale": "\n        When OS/2 and hhea vertical metrics match, the same linespacing results on macOS, GNU+Linux and Windows. Unfortunately as of 2018, Google Fonts has released many fonts with vertical metrics that don't match in this way. When we fix this issue in these existing families, we will create a visible change in line/paragraph layout for either Windows or macOS users, which will upset some of them.\n\n        But we have a duty to fix broken stuff, and inconsistent paragraph layout is unacceptably broken when it is possible to avoid it.\n\n        If users complain and prefer the old broken version, they have the freedom to take care of their own situation.\n    ",
-                    "result": "FAIL"
+                    "result": "PASS"
                 },
                 {
                     "description": "Checking with ftxvalidator.",
@@ -3207,9 +3202,8 @@
                 null
             ],
             "result": {
-                "FAIL": 2,
                 "INFO": 2,
-                "PASS": 14,
+                "PASS": 16,
                 "SKIP": 3,
                 "WARN": 1
             }
@@ -3840,12 +3834,12 @@
                     ],
                     "logs": [
                         {
-                            "message": "OS/2 sTypoLineGap is not equal to 0. [code: OS/2]",
-                            "status": "WARN",
+                            "message": "OS/2 sTypoLineGap and hhea lineGap are both 0.",
+                            "status": "PASS",
                             "traceback": null
                         }
                     ],
-                    "result": "WARN"
+                    "result": "PASS"
                 },
                 {
                     "description": "MaxAdvanceWidth is consistent with values in the Hmtx and Hhea tables?",
@@ -3876,8 +3870,7 @@
                 null
             ],
             "result": {
-                "PASS": 1,
-                "WARN": 1
+                "PASS": 2
             }
         },
         {
