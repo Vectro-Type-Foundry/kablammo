@@ -72,6 +72,8 @@ else
   echo "cleanup"
   rm -rf instance_ufo
   rm -rf master_ufo
+
+  echo "Kablammo Build Finished!"
 fi
 
 
