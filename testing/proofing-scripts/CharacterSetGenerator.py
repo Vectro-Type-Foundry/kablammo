@@ -12,24 +12,24 @@ v='v0.17'
 fonts = [
     {
         'title': 'Kablammo A',
-        'fontPath': '../fonts/static/otf/Kablammo' + v + '-A.otf'
+        'fontPath': '../../fonts/static/otf/Kablammo' + v + '-A.otf'
     },
     {
         'title': 'Kablammo B',
-        'fontPath': '../fonts/static/otf/Kablammo' + v + '-B.otf'
+        'fontPath': '../../fonts/static/otf/Kablammo' + v + '-B.otf'
     },
     {
         'title': 'Kablammo C',
-        'fontPath': '../fonts/static/otf/Kablammo' + v + '-C.otf'
+        'fontPath': '../../fonts/static/otf/Kablammo' + v + '-C.otf'
     },
     {
         'title': 'Kablammo D',
-        'fontPath': '../fonts/static/otf/Kablammo' + v + '-D.otf'
+        'fontPath': '../../fonts/static/otf/Kablammo' + v + '-D.otf'
     }
 ]
 txtFontSize = 60
 txtLineHeight = 100
-numCols = 10
+numCols = 3
 numRows = 10
 
 bgColorR, bgColorG, bgColorB, bgColorA = 1,1,1,1
@@ -43,13 +43,15 @@ textBoxHeight = docHeight - topMargin - bottomMargin
 
 showTitle = True # enable if you'd like to display the title
 titleFont = 'ISO v0.8'
-titleFontSize = 18
+titleFontSize = 12
 titleTextColorR, titleTextColorG, titleTextColorB, titleTextColorA = 0,0,0,1
 titleX, titleY = docWidth/2, docHeight - 50
 
 
 timestamp = str(datetime.datetime.now().strftime('%Y-%m-%d_%H-%M'))
 fileName = '~/Desktop/Temp/KablammoCharacterSet-' + timestamp + '.pdf'
+
+blacklistSuffixes = ['.rev', '.bottomless', '.topless', '.nodot', '.toplessbottomless', '.midless']
 
 
 #------------------ 
@@ -63,8 +65,8 @@ def setup():
     rect(0, 0, docWidth, docHeight)
     
 def main():
-    for f in fonts:        
-        drawGlyphs(f)
+    #for f in fonts:        
+    drawGlyphs(fonts[0])
         
     saveImage(fileName, multipage=True)
     
@@ -78,6 +80,11 @@ def glyphGroups(fontPath):
     font(fontPath)
 
     glyphs = listFontGlyphNames()
+    
+    for suffix in blacklistSuffixes:        
+        glyphs = list(filter(lambda g: suffix not in g, glyphs))
+        
+    
     glyphsPerPage = numCols * numRows
     glyphGroups = []
     for i in range(0, len(glyphs), glyphsPerPage):
@@ -96,7 +103,7 @@ def drawTitle(f):
         font(titleFont)
         fontSize(titleFontSize)
         fill(titleTextColorR, titleTextColorG, titleTextColorB, titleTextColorA)
-        text(f['title'], (titleX, titleY), align='center')
+        text('Kablammo Character Set: ' + timestamp, (titleX, titleY), align='center')
     
 def drawPage(f, glyphList, pNum):
     setupNewPage()
@@ -121,7 +128,9 @@ def drawPage(f, glyphList, pNum):
     txt.append('\t')
     col = 1
     for glyph in glyphList:
-        txt.appendGlyph(glyph)
+        for i, f in enumerate(fonts):            
+            txt.font(f['fontPath'])
+            txt.appendGlyph(glyph)
         if col == numCols:
             txt.append('\n\t')
             col = 1
