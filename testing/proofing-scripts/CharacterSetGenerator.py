@@ -36,7 +36,7 @@ bgColorR, bgColorG, bgColorB, bgColorA = 1,1,1,1
 textColorR, textColorG, textColorB, textColorA = 0,0,0,1
 
 docWidth, docHeight = 800, 1150
-topMargin, rightMargin, bottomMargin, leftMargin = 70, 50, 50, 50 
+topMargin, rightMargin, bottomMargin, leftMargin = 70, 20, 50, 20 
 
 textBoxWidth = docWidth - leftMargin - rightMargin
 textBoxHeight = docHeight - topMargin - bottomMargin
@@ -52,7 +52,7 @@ timestamp = str(datetime.datetime.now().strftime('%Y-%m-%d_%H-%M'))
 fileName = '~/Desktop/Temp/KablammoCharacterSet-' + timestamp + '.pdf'
 
 blacklistSuffixes = ['.rev', '.bottomless', '.topless', '.nodot', '.toplessbottomless', '.midless']
-
+wideGlyphs = ['uni01C4', 'uni01CA', 'border_4']
 
 #------------------ 
 # End Customization
@@ -83,8 +83,13 @@ def glyphGroups(fontPath):
     
     for suffix in blacklistSuffixes:        
         glyphs = list(filter(lambda g: suffix not in g, glyphs))
-        
     
+    for name in wideGlyphs:
+        glyphs = list(filter(lambda g: g != name, glyphs))
+        
+    for name in wideGlyphs:
+        glyphs.append(name)
+            
     glyphsPerPage = numCols * numRows
     glyphGroups = []
     for i in range(0, len(glyphs), glyphsPerPage):
