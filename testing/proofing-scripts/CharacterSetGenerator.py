@@ -7,7 +7,7 @@ import datetime;
 # Customize this stuff
 #------------------ 
 
-v='v0.17'
+v='v0.18'
 
 fonts = [
     {
