@@ -3,3 +3,4 @@ fontmake
 fontbakery
 gftools
 Pillow
+fontparts
