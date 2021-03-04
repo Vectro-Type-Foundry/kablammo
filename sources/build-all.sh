@@ -21,7 +21,7 @@ else
 
   echo "generate variable font"
   VF_full_output_path="${variable_output_path}/Kablammov${version}[move].ttf"
-  fontmake -g $glyphsSource -o variable --output-path $VF_full_output_path
+  fontmake -g $glyphsSource -o variable --output-path $VF_full_output_path --flatten-components
 
   echo "generate otfs"
   fontmake -g $glyphsSource -o otf -i --output-dir $static_output_path/otf
