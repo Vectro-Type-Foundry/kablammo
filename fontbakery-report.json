@@ -1312,6 +1312,11 @@
                     ],
                     "logs": [
                         {
+                            "message": "Name Table entry: Copyright field 'Copyright 2021 The Kablammo Project Authors (https://github.com/scribbletone/kablammo)' matches canonical pattern.",
+                            "status": "PASS",
+                            "traceback": null
+                        },
+                        {
                             "message": "Name table copyright entries are good",
                             "status": "PASS",
                             "traceback": null

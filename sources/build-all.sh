@@ -10,7 +10,7 @@ else
   version=$1
 
 
-  glyphsSource="sources/Kablammo.glyphs"
+  glyphsSource="sources/Kablammo-d.glyphs"
 
   output_path="fonts"
   static_output_path="${output_path}/static"
@@ -32,12 +32,15 @@ else
 
   echo "misc table fixes"
   function fixMiscTables {
+    echo "fix-nonhinting"
     gftools fix-nonhinting $1 $1
-    gftools fix-fstype $1
-    mv $1.fix $1 2>/dev/null
+    # echo "fix-fstype"
+    # gftools fix-fstype $1
+    # echo ""
+    # mv $1.fix $1 2>/dev/null
+    echo "fix dsig"
     gftools fix-dsig -f $1
   }
-
   fixMiscTables $VF_full_output_path
   for filename in $static_output_path/otf/*.otf; do
     fixMiscTables $filename
