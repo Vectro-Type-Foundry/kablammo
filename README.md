@@ -33,6 +33,11 @@ https://www.dropbox.com/scl/fi/e342iuhexlpbdsoy4fe63/Design-Notes.paper?dl=0&rlk
 
 
 ## Brace layer guidelines
+- Dots should always have a brace layer on entry and exit. Appearance should never span more than half the distance between masters. This is to help speed up the awkward time when they are super small.
 - if two or more grouped spots/gashes appear at same time, use brace layer to stagger
+- use to stagger dash extension and retraction
 - use to avoid crashing elements
-- use to keep spots from hitting edges, or coming uncomfortably close
+- use to keep spots from hitting edges, or coming uncomfortably close to edges
+- When staggering elements, try to react to the movement of the stroke’s contrast. For example, if two dots are set to appear, the first one to appear should be on the heaviest end of the stroke. As if bulge is created because the the dot is pushing its way into the stroke.
+- Brace layer value should usually be in the halfway point between two masters. 
+- These aren’t hard rules. Exceptions can be made to help overall glyph balance, especially with dashes which affect spacing more.
