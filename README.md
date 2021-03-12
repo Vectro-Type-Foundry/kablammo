@@ -30,3 +30,9 @@ Generate
 ## Design notes
 Will move this to readme eventually, but for now, it's here:
 https://www.dropbox.com/scl/fi/e342iuhexlpbdsoy4fe63/Design-Notes.paper?dl=0&rlkey=j91pgf0dki1uz7pgtkdovr4os
+
+
+## Brace layer guidelines
+- if two or more grouped spots/gashes appear at same time, use brace layer to stagger
+- use to avoid crashing elements
+- use to keep spots from hitting edges, or coming uncomfortably close

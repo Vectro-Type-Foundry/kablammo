@@ -10,7 +10,7 @@ else
   version=$1
 
 
-  glyphsSource="sources/Kablammo-d.glyphs"
+  glyphsSource="sources/Kablammo.glyphs"
 
   output_path="fonts"
   static_output_path="${output_path}/static"
