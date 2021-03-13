@@ -41,3 +41,10 @@ https://www.dropbox.com/scl/fi/e342iuhexlpbdsoy4fe63/Design-Notes.paper?dl=0&rlk
 - When staggering elements, try to react to the movement of the stroke’s contrast. For example, if two dots are set to appear, the first one to appear should be on the heaviest end of the stroke. As if bulge is created because the the dot is pushing its way into the stroke.
 - Brace layer value should usually be in the halfway point between two masters. 
 - These aren’t hard rules. Exceptions can be made to help overall glyph balance, especially with dashes which affect spacing more.
+
+## Join rounding guidelines
+- If stroke completely crosses through another, keep sharp
+- Gashes/Dashes stay sharp
+- If a stroke is a core piece of the letterform, like ogonek/cedilla, it should be rounded, unless it completely passes through
+- If a core stroke disconnects, and behaves like a dash, it is usually better to leave sharp due to interpolation restrictions. As seen in `A` crossbar.
+- If a glyph feels better rounded or sharp, it is ok to break the rules
