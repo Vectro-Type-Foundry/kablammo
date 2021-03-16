@@ -7,7 +7,7 @@ import datetime;
 # Customize this stuff
 #------------------ 
 
-v='v0.17'
+v='v0.18'
 
 fonts = [
     {
@@ -44,7 +44,7 @@ textBoxWidth = docWidth - leftMargin - rightMargin
 textBoxHeight = docHeight - topMargin - bottomMargin
 
 showTitle = True # enable if you'd like to display the title
-titleFont = 'ISO v0.8'
+titleFont = 'ISO v0.9'
 titleFontSize = 12
 titleTextColorR, titleTextColorG, titleTextColorB, titleTextColorA = 0,0,0,1
 titleX, titleY = docWidth/2, docHeight - 50
