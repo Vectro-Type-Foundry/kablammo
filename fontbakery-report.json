@@ -3,8 +3,8 @@
         "ERROR": 2,
         "FAIL": 1,
         "INFO": 7,
-        "PASS": 87,
-        "SKIP": 96,
+        "PASS": 88,
+        "SKIP": 95,
         "WARN": 2
     },
     "sections": [
@@ -593,13 +593,13 @@
                     ],
                     "logs": [
                         {
-                            "message": "Could not infer the font license. Please ensure NameID 13 (LICENSE DESCRIPTION) is properly set.",
-                            "status": "SKIP",
+                            "message": "Font has a valid license URL in NAME table.",
+                            "status": "PASS",
                             "traceback": null
                         }
                     ],
                     "rationale": "\n        A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry of the name table.\n\n        The source of truth for this check is the licensing text found on the NameID 13 entry (LICENSE DESCRIPTION).\n\n        The string snippets used for detecting licensing terms are:\n        - \"This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL\"\n        - \"Licensed under the Apache License, Version 2.0\"\n        - \"Licensed under the Ubuntu Font Licence 1.0.\"\n\n\n        Currently accepted licenses are Apache or Open Font License.\n        For a small set of legacy families the Ubuntu Font License may be acceptable as well.\n\n        When in doubt, please choose OFL for new font projects.\n    ",
-                    "result": "SKIP"
+                    "result": "PASS"
                 },
                 {
                     "description": "Description strings in the name table must not exceed 200 characters.",
@@ -2713,8 +2713,8 @@
                 "ERROR": 2,
                 "FAIL": 1,
                 "INFO": 4,
-                "PASS": 35,
-                "SKIP": 77,
+                "PASS": 36,
+                "SKIP": 76,
                 "WARN": 1
             }
         },
