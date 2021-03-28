@@ -52,7 +52,7 @@ timestamp = str(datetime.datetime.now().strftime('%Y-%m-%d_%H-%M'))
 fileName = '~/Desktop/Temp/KablammoCharacterSet-' + timestamp + '.pdf'
 
 blacklistSuffixes = ['.rev', '.bottomless', '.topless', '.nodot', '.toplessbottomless', '.midless']
-wideGlyphs = ['uni01C4', 'uni01CA', 'border_4']
+wideGlyphs = ['uni01C4', 'uni01CA', 'border_4', 'pattern_1', 'pattern_3', 'kablammo_blast', 'kablammo', 'kablammocyrillic']
 
 #------------------ 
 # End Customization
