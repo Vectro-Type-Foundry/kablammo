@@ -192,8 +192,7 @@ def drawPage(f, combinations, sectionName, pNum):
     drawSectionTitle(sectionName)
     txt = FormattedString()
     txt.fill(textColorR,textColorG,textColorB,textColorA)
-
-    
+    txt.openTypeFeatures(calt=False)                
     tabList = []
     colWidth = textBoxWidth / len(fonts)
     for col in range(len(fonts)):
@@ -217,7 +216,7 @@ def drawPage(f, combinations, sectionName, pNum):
     for rowCombinations in combinationsToRows(combinations):
         for f in fonts:
             txt.font(f['fontPath'])
-            for combination in rowCombinations:                
+            for combination in rowCombinations:
                 txt.append(separator)
                 txt.append(combination)
                 txt.append(separator)
