@@ -56,57 +56,51 @@ pairsPerRow = 2
 
 separator = 'HOH'
 
+groupsToKern = [
+    ['UC','Punctuation']
+]
+
 firstGroups = [
     {
         'name': 'UC',
-        'active': True,
         'glyphs': 'ABCDEFGHIJKLMNŊOPÞQRSẞƏTUVWXYZ'
     },
     {
         'name': 'Figures',
-        'active': False,
         'glyphs': '0123456789'
     },
     {
         'name': 'Punctuation',
-        'active': False,
         'glyphs': '.’:;!¡?¿•*#//\[]-_«»‹›⟨⟩@&¶§©®™°′″|¦†ℓ‡№ªºπ₀⁰½¼¾℮%‰↑↗→↘↓↙←↖↔↕'
     },
     {
         'name': 'Currency & Math',
-        'active': False,
         'glyphs': '₵¢₡¤$₫€ƒ₣₲₴₭₤₺₼₦₧₱₽₹£₸₮₩¥∙⁒∕+-×÷=≠><≥≤±≈~¬^∅∞∫Ω∆∏∑√µ∂◊'
     },
     {
         'name': 'Dingbats',
-        'active': False,
         'glyphs': '꩜☀★☆☺☼☾♈♉♊♋♌♍♎♏♐♑♒♓♡♥⚠⚡⛎✨🌐🌼🍕👀👁👄👑👻👽💎💖💥💩🔥🛸🪐'
     }
 ]
 secondGroups = [
     {
         'name': 'UC',
-        'active': True,
         'glyphs': 'AÆBCDEFGHIJKLMNOPÞQRSẞƏTUVWXYZ'
     },
     {
         'name': 'Figures',
-        'active': False,
         'glyphs': '0123456789'
     },
     {
         'name': 'Punctuation',
-        'active': False,
         'glyphs': '.’:;!¡?¿•*#//\[]-_«»‹›⟨⟩@&¶§©®™°′″|¦†ℓ‡№℮ªºπ₀⁰½¼¾%‰↑↗→↘↓↙←↖↔↕' 
     },
     {
         'name': 'Currency & Math',
-        'active': False,
         'glyphs': '₵¢₡¤$₫€ƒ₣₲₴₭₤₺₼₦₧₱₽₹£₸₮₩¥∙⁒∕+-×÷=≠><≥≤±≈~¬^∅∞∫Ω∆∏∑√µ∂◊'
     },
     {
         'name': 'Dingbats',
-        'active': False,
         'glyphs': '꩜☀★☆☺☼☾♈♉♊♋♌♍♎♏♐♑♒♓♡♥⚠⚡⛎✨🌐🌼🍕👀👁👄👑👻👽💎💖💥💩🔥🛸🪐'
     }
 ]
@@ -122,23 +116,30 @@ def main():
     buildCombinationGroups()
     drawGlyphs(fonts[0])
     saveImage(fileName, multipage=True)
-    
+ 
+
+def findGroup(name, position):
+    groupLists = [firstGroups, secondGroups]
+    groupList = groupLists[position]
+    return next(group for group in groupList if group['name'] == name)
     
 def buildCombinationGroups():
     global combinationGroups
     combinationGroups = []
-    for firstGroup in firstGroups:
-        for secondGroup in secondGroups:
-            if firstGroup['active'] and secondGroup['active']:
-                combinations = []
-                for firstGlyph in list(firstGroup['glyphs']):
-                    for secondGlyph in list(secondGroup['glyphs']):
-                        combinations.append("%s%s" % (firstGlyph, secondGlyph))
-                        
-                combinationGroups.append({
-                    'name': "%s -> %s" % (firstGroup['name'], secondGroup['name']),
-                    'combinations': combinations
-                    }) 
+    
+    for groupPair in groupsToKern:
+        firstGroup = findGroup(groupPair[0], 0)
+        secondGroup = findGroup(groupPair[1], 1)
+    
+        combinations = []
+        for firstGlyph in list(firstGroup['glyphs']):
+            for secondGlyph in list(secondGroup['glyphs']):
+                combinations.append("%s%s" % (firstGlyph, secondGlyph))
+                
+        combinationGroups.append({
+            'name': "%s -> %s" % (firstGroup['name'], secondGroup['name']),
+            'combinations': combinations
+            }) 
 
 def numberOfCombinations():
     total = 0
