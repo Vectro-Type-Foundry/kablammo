@@ -57,7 +57,7 @@ pairsPerRow = 2
 separator = 'HOH'
 
 groupsToKern = [
-    ['UC','Punctuation']
+    ['Punctuation', 'UC']
 ]
 
 firstGroups = [
@@ -71,7 +71,7 @@ firstGroups = [
     },
     {
         'name': 'Punctuation',
-        'glyphs': '.’:;!¡?¿•*#/\[]-_«»⟨⟩@&¶§©°|¦ℓ№π₀⁰½¼¾℮%↑↗→↘↓↙←↖↔↕'
+        'glyphs': '.’:;!¡?¿•*#/\[]-_«»⟨⟩@&¶§©°|¦ℓ№π½¼¾℮%↑↗→↘↓↙←↖↔↕'
     },
     {
         'name': 'Currency & Math',
@@ -93,7 +93,7 @@ secondGroups = [
     },
     {
         'name': 'Punctuation',
-        'glyphs': '.’:;!¡?¿•*#/\[]-_«»⟨⟩@&¶§©°|¦ℓ№π₀⁰½¼¾℮%↑↗→↘↓↙←↖↔↕'
+        'glyphs': '.’:;!¡?¿•*#/\[]-_«»⟨⟩@&¶§©°|¦ℓ№π½¼¾℮%↑↗→↘↓↙←↖↔↕'
     },
     {
         'name': 'Currency & Math',
