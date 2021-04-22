@@ -57,8 +57,8 @@ pairsPerRow = 2
 separator = 'HOH'
 
 groupsToKern = [
-    ['Figures', 'Currency & Math'],
-    ['Currency & Math', 'Figures']
+    ['UC', 'Figures'],
+    ['Figures', 'UC']
 ]
 
 firstGroups = [
