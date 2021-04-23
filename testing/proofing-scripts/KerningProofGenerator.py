@@ -57,8 +57,8 @@ pairsPerRow = 2
 separator = 'HOH'
 
 groupsToKern = [
-    ['UC', 'Figures'],
-    ['Figures', 'UC']
+    ['Punctuation', 'Figures'],
+    ['Figures', 'Punctuation']
 ]
 
 firstGroups = [
