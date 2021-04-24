@@ -57,8 +57,7 @@ pairsPerRow = 2
 separator = 'HOH'
 
 groupsToKern = [
-    ['Punctuation', 'Figures'],
-    ['Figures', 'Punctuation']
+    ['UC', 'UC']
 ]
 
 firstGroups = [
@@ -81,6 +80,14 @@ firstGroups = [
     {
         'name': 'Dingbats',
         'glyphs': '꩜☀★☆☺☼☾♈♉♊♋♌♍♎♏♐♑♒♓♡♥⚠⚡⛎✨🌐🌼🍕👀👁👄👑👻👽💎💖💥💩🔥🛸🪐'
+    },
+    {
+        'name': 'Select Math',
+        'glyphs': '¢$€£¥/+-=><~^'
+    },
+    {
+        'name': 'Select Punct',
+        'glyphs': '.‘’:;!¡?¿•*#/\[]-_@&¶§©°%'
     }
 ]
 secondGroups = [
@@ -103,6 +110,14 @@ secondGroups = [
     {
         'name': 'Dingbats',
         'glyphs': '꩜☀★☆☺☼☾♈♉♊♋♌♍♎♏♐♑♒♓♡♥⚠⚡⛎✨🌐🌼🍕👀👁👄👑👻👽💎💖💥💩🔥🛸🪐'
+    },
+    {
+        'name': 'Select Math',
+        'glyphs': '¢$€£¥/+-=><~^'
+    },
+    {
+        'name': 'Select Punct',
+        'glyphs': '.‘’:;!¡?¿•*#/\[]-_@&¶§©°%'
     }
 ]
 
