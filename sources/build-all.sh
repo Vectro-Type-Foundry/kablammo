@@ -21,11 +21,11 @@ else
 
   echo "generate variable font"
   VF_full_output_path="${variable_output_path}/Kablammov${version}[move].ttf"
-  fontmake -g $glyphsSource -o variable --output-path $VF_full_output_path --flatten-components
+  fontmake -g $glyphsSource -o variable --output-path $VF_full_output_path --flatten-components -a
 
-  echo "generate otfs"
-  fontmake -g $glyphsSource -o otf -i --output-dir $static_output_path/otf
-  fontmake -g $glyphsSource -o ttf -i --output-dir $static_output_path/ttf
+  echo "generate static fonts"
+  fontmake -g $glyphsSource -o otf -i --output-dir $static_output_path/otf -a
+  fontmake -g $glyphsSource -o ttf -i --output-dir $static_output_path/ttf -a
 
   echo "add stat table"
   gftools gen-stat $VF_full_output_path --src sources/scripts/stat.yaml --inplace
