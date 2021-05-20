@@ -57,8 +57,12 @@ pairsPerRow = 2
 separator = 'HOH'
 
 groupsToKern = [
-    ['Problem First', 'UC'],
-    ['UC', 'Problem Second']
+    ['Exceptions', 'UC'],
+    ['UC', 'Exceptions'],
+    ['Exceptions', 'Figures'],
+    ['Figures', 'Exceptions'],
+    ['Exceptions', 'Punctuation'],
+    ['Punctuation', 'Exceptions']
 ]
 
 firstGroups = [
@@ -91,8 +95,8 @@ firstGroups = [
         'glyphs': '.‘’:;!¡?¿•*#/\[]-_@&¶§©°%'
     },
     {
-        'name': 'Problem First',
-        'glyphs': 'L'
+        'name': 'Exceptions',
+        'glyphs': 'ĦƠƯ'
     }
 ]
 secondGroups = [
@@ -127,6 +131,10 @@ secondGroups = [
     {
         'name': 'Problem Second',
         'glyphs': 'ATVWXY'
+    },
+    {
+        'name': 'Exceptions',
+        'glyphs': 'ĦŁ'
     }
 ]
 
