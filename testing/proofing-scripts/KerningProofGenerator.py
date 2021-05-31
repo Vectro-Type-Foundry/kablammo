@@ -8,7 +8,7 @@ import math;
 # Customize this stuff
 #------------------ 
 
-v='v0.20'
+v='v0.21'
 
 fonts = [
     {
@@ -57,7 +57,12 @@ pairsPerRow = 2
 separator = 'HOH'
 
 groupsToKern = [
-    ['UC', 'UC']
+    ['Exceptions', 'UC'],
+    ['UC', 'Exceptions'],
+    ['Exceptions', 'Figures'],
+    ['Figures', 'Exceptions'],
+    ['Exceptions', 'Punctuation'],
+    ['Punctuation', 'Exceptions']
 ]
 
 firstGroups = [
@@ -88,6 +93,10 @@ firstGroups = [
     {
         'name': 'Select Punct',
         'glyphs': '.‘’:;!¡?¿•*#/\[]-_@&¶§©°%'
+    },
+    {
+        'name': 'Exceptions',
+        'glyphs': 'ĦƠƯ'
     }
 ]
 secondGroups = [
@@ -118,6 +127,14 @@ secondGroups = [
     {
         'name': 'Select Punct',
         'glyphs': '.‘’:;!¡?¿•*#/\[]-_@&¶§©°%'
+    },
+    {
+        'name': 'Problem Second',
+        'glyphs': 'ATVWXY'
+    },
+    {
+        'name': 'Exceptions',
+        'glyphs': 'ĦŁ'
     }
 ]
 
