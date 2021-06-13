@@ -8,7 +8,7 @@ import math;
 # Customize this stuff
 #------------------ 
 
-v='v0.20'
+v='v0.21'
 
 fonts = [
     {
@@ -56,58 +56,85 @@ pairsPerRow = 2
 
 separator = 'HOH'
 
+groupsToKern = [
+    ['Exceptions', 'UC'],
+    ['UC', 'Exceptions'],
+    ['Exceptions', 'Figures'],
+    ['Figures', 'Exceptions'],
+    ['Exceptions', 'Punctuation'],
+    ['Punctuation', 'Exceptions']
+]
+
 firstGroups = [
     {
         'name': 'UC',
-        'active': True,
         'glyphs': 'ABCDEFGHIJKLMNŊOPÞQRSẞƏTUVWXYZ'
     },
     {
         'name': 'Figures',
-        'active': False,
         'glyphs': '0123456789'
     },
     {
         'name': 'Punctuation',
-        'active': False,
-        'glyphs': '.’:;!¡?¿•*#//\[]-_«»‹›⟨⟩@&¶§©®™°′″|¦†ℓ‡№ªºπ₀⁰½¼¾℮%‰↑↗→↘↓↙←↖↔↕'
+        'glyphs': '.‘’:;!¡?¿•*#/\[]-_«»⟨⟩@&¶§©°|¦ℓ№π½¼¾℮%↑↗→↘↓↙←↖↔↕'
     },
     {
         'name': 'Currency & Math',
-        'active': False,
         'glyphs': '₵¢₡¤$₫€ƒ₣₲₴₭₤₺₼₦₧₱₽₹£₸₮₩¥∙⁒∕+-×÷=≠><≥≤±≈~¬^∅∞∫Ω∆∏∑√µ∂◊'
     },
     {
         'name': 'Dingbats',
-        'active': False,
         'glyphs': '꩜☀★☆☺☼☾♈♉♊♋♌♍♎♏♐♑♒♓♡♥⚠⚡⛎✨🌐🌼🍕👀👁👄👑👻👽💎💖💥💩🔥🛸🪐'
+    },
+    {
+        'name': 'Select Math',
+        'glyphs': '¢$€£¥/+-=><~^'
+    },
+    {
+        'name': 'Select Punct',
+        'glyphs': '.‘’:;!¡?¿•*#/\[]-_@&¶§©°%'
+    },
+    {
+        'name': 'Exceptions',
+        'glyphs': 'ĦƠƯ'
     }
 ]
 secondGroups = [
     {
         'name': 'UC',
-        'active': True,
         'glyphs': 'AÆBCDEFGHIJKLMNOPÞQRSẞƏTUVWXYZ'
     },
     {
         'name': 'Figures',
-        'active': False,
         'glyphs': '0123456789'
     },
     {
         'name': 'Punctuation',
-        'active': False,
-        'glyphs': '.’:;!¡?¿•*#//\[]-_«»‹›⟨⟩@&¶§©®™°′″|¦†ℓ‡№℮ªºπ₀⁰½¼¾%‰↑↗→↘↓↙←↖↔↕' 
+        'glyphs': '.’:;!¡?¿•*#/\[]-_«»⟨⟩@&¶§©°|¦ℓ№π½¼¾℮%↑↗→↘↓↙←↖↔↕'
     },
     {
         'name': 'Currency & Math',
-        'active': False,
         'glyphs': '₵¢₡¤$₫€ƒ₣₲₴₭₤₺₼₦₧₱₽₹£₸₮₩¥∙⁒∕+-×÷=≠><≥≤±≈~¬^∅∞∫Ω∆∏∑√µ∂◊'
     },
     {
         'name': 'Dingbats',
-        'active': False,
         'glyphs': '꩜☀★☆☺☼☾♈♉♊♋♌♍♎♏♐♑♒♓♡♥⚠⚡⛎✨🌐🌼🍕👀👁👄👑👻👽💎💖💥💩🔥🛸🪐'
+    },
+    {
+        'name': 'Select Math',
+        'glyphs': '¢$€£¥/+-=><~^'
+    },
+    {
+        'name': 'Select Punct',
+        'glyphs': '.‘’:;!¡?¿•*#/\[]-_@&¶§©°%'
+    },
+    {
+        'name': 'Problem Second',
+        'glyphs': 'ATVWXY'
+    },
+    {
+        'name': 'Exceptions',
+        'glyphs': 'ĦŁ'
     }
 ]
 
@@ -122,23 +149,30 @@ def main():
     buildCombinationGroups()
     drawGlyphs(fonts[0])
     saveImage(fileName, multipage=True)
-    
+ 
+
+def findGroup(name, position):
+    groupLists = [firstGroups, secondGroups]
+    groupList = groupLists[position]
+    return next(group for group in groupList if group['name'] == name)
     
 def buildCombinationGroups():
     global combinationGroups
     combinationGroups = []
-    for firstGroup in firstGroups:
-        for secondGroup in secondGroups:
-            if firstGroup['active'] and secondGroup['active']:
-                combinations = []
-                for firstGlyph in list(firstGroup['glyphs']):
-                    for secondGlyph in list(secondGroup['glyphs']):
-                        combinations.append("%s%s" % (firstGlyph, secondGlyph))
-                        
-                combinationGroups.append({
-                    'name': "%s -> %s" % (firstGroup['name'], secondGroup['name']),
-                    'combinations': combinations
-                    }) 
+    
+    for groupPair in groupsToKern:
+        firstGroup = findGroup(groupPair[0], 0)
+        secondGroup = findGroup(groupPair[1], 1)
+    
+        combinations = []
+        for firstGlyph in list(firstGroup['glyphs']):
+            for secondGlyph in list(secondGroup['glyphs']):
+                combinations.append("%s%s" % (firstGlyph, secondGlyph))
+                
+        combinationGroups.append({
+            'name': "%s -> %s" % (firstGroup['name'], secondGroup['name']),
+            'combinations': combinations
+            }) 
 
 def numberOfCombinations():
     total = 0
@@ -192,8 +226,7 @@ def drawPage(f, combinations, sectionName, pNum):
     drawSectionTitle(sectionName)
     txt = FormattedString()
     txt.fill(textColorR,textColorG,textColorB,textColorA)
-
-    
+    txt.openTypeFeatures(calt=False)                
     tabList = []
     colWidth = textBoxWidth / len(fonts)
     for col in range(len(fonts)):
@@ -217,7 +250,7 @@ def drawPage(f, combinations, sectionName, pNum):
     for rowCombinations in combinationsToRows(combinations):
         for f in fonts:
             txt.font(f['fontPath'])
-            for combination in rowCombinations:                
+            for combination in rowCombinations:
                 txt.append(separator)
                 txt.append(combination)
                 txt.append(separator)
