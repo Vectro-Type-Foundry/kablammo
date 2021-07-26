@@ -1,10 +1,10 @@
 {
     "result": {
         "FAIL": 1,
-        "INFO": 9,
-        "PASS": 91,
-        "SKIP": 101,
-        "WARN": 2
+        "INFO": 8,
+        "PASS": 101,
+        "SKIP": 100,
+        "WARN": 3
     },
     "sections": [
         {
@@ -61,6 +61,23 @@
                     "result": "PASS"
                 },
                 {
+                    "description": "Ensure Italic styles have Roman counterparts.",
+                    "key": [
+                        "<Section: Google Fonts>",
+                        "<FontBakeryCheck:com.google.fonts/check/family/italics_have_roman_counterparts>",
+                        []
+                    ],
+                    "logs": [
+                        {
+                            "message": "OK",
+                            "status": "PASS",
+                            "traceback": null
+                        }
+                    ],
+                    "rationale": "\n        For each font family on Google Fonts, every Italic style must have a Roman sibling.\n\n        This kind of problem was first observed at [1] where the Bold style was missing but BoldItalic was included.\n\n        [1] https://github.com/google/fonts/pull/1482\n    ",
+                    "result": "PASS"
+                },
+                {
                     "description": "Check axis ordering on the STAT table. ",
                     "key": [
                         "<Section: Google Fonts>",
@@ -79,7 +96,7 @@
                 },
                 {
                     "description": "Checking file is named canonically.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/canonical_filename>",
@@ -92,7 +109,7 @@
                     ],
                     "logs": [
                         {
-                            "message": "fonts/Kablammov0.21[move].ttf is named canonically.",
+                            "message": "fonts/Kablammo[move].ttf is named canonically.",
                             "status": "PASS",
                             "traceback": null
                         }
@@ -102,7 +119,7 @@
                 },
                 {
                     "description": "Does DESCRIPTION file contain broken links?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/description/broken_links>",
@@ -125,7 +142,7 @@
                 },
                 {
                     "description": "Does DESCRIPTION file contain a upstream Git repo URL?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/description/git_url>",
@@ -148,7 +165,7 @@
                 },
                 {
                     "description": "Is this a proper HTML snippet?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/description/valid_html>",
@@ -171,7 +188,7 @@
                 },
                 {
                     "description": "DESCRIPTION.en_us.html must have more than 200 bytes.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/description/min_length>",
@@ -192,8 +209,8 @@
                     "result": "SKIP"
                 },
                 {
-                    "description": "DESCRIPTION.en_us.html must have less than 1000 bytes.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "description": "DESCRIPTION.en_us.html must have less than 2000 bytes.",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/description/max_length>",
@@ -211,11 +228,12 @@
                             "traceback": null
                         }
                     ],
+                    "rationale": "\n        The fonts.google.com catalog specimen pages 2016 to 2020 were placed in a narrow area of the page.\n        That meant a maximum limit of 1,000 characters was good, so that the narrow column did not extent that section of the page to be too long.\n        \n        But with the \"v4\" redesign of 2020, the specimen pages allow for longer texts without upsetting the balance of the page.\n        So currently the limit before warning is 2,000 characters.\n    ",
                     "result": "SKIP"
                 },
                 {
                     "description": "DESCRIPTION.en_us.html should end in a linebreak.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/description/eof_linebreak>",
@@ -238,7 +256,7 @@
                 },
                 {
                     "description": "Check METADATA.pb parse correctly.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/parses>",
@@ -261,7 +279,7 @@
                 },
                 {
                     "description": "Font designer field in METADATA.pb must not be 'unknown'.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/unknown_designer>",
@@ -283,7 +301,7 @@
                 },
                 {
                     "description": "Font designer field in METADATA.pb must not contain 'Multiple designers'.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/multiple_designers>",
@@ -306,7 +324,7 @@
                 },
                 {
                     "description": "Multiple values in font designer field in METADATA.pb must be separated by commas.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/designer_values>",
@@ -329,7 +347,7 @@
                 },
                 {
                     "description": "Does METADATA.pb copyright field contain broken links?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/broken_links>",
@@ -351,7 +369,7 @@
                 },
                 {
                     "description": "Ensure METADATA.pb lists all font binaries.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/undeclared_fonts>",
@@ -374,7 +392,7 @@
                 },
                 {
                     "description": "Ensure METADATA.pb category field is valid.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/category>",
@@ -397,7 +415,7 @@
                 },
                 {
                     "description": "Checking OS/2 fsType does not impose restrictions.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/fstype>",
@@ -420,7 +438,7 @@
                 },
                 {
                     "description": "Checking OS/2 achVendID.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/vendor_id>",
@@ -443,7 +461,7 @@
                 },
                 {
                     "description": "Check `Google Fonts Latin Core` glyph coverage.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/glyph_coverage>",
@@ -466,7 +484,7 @@
                 },
                 {
                     "description": "Substitute copyright, registered and trademark symbols in name table entries.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/name/unwanted_chars>",
@@ -488,7 +506,7 @@
                 },
                 {
                     "description": "Checking OS/2 usWeightClass.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/usweightclass>",
@@ -511,7 +529,7 @@
                 },
                 {
                     "description": "Check font has a license.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/family/has_license>",
@@ -533,7 +551,7 @@
                 },
                 {
                     "description": "Check license file has good copyright string.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/license/OFL_copyright>",
@@ -546,17 +564,42 @@
                     ],
                     "logs": [
                         {
-                            "message": "Unfulfilled Conditions: license_contents",
-                            "status": "SKIP",
+                            "message": "looks good",
+                            "status": "PASS",
                             "traceback": null
                         }
                     ],
                     "rationale": "\n        An OFL.txt file's first line should be the font copyright e.g:\n        \"Copyright 2019 The Montserrat Project Authors (https://github.com/julietaula/montserrat)\"\n    ",
-                    "result": "SKIP"
+                    "result": "PASS",
+                    "severity": 10
+                },
+                {
+                    "description": "Check OFL body text is correct.",
+                    "filename": "fonts/Kablammo[move].ttf",
+                    "key": [
+                        "<Section: Google Fonts>",
+                        "<FontBakeryCheck:com.google.fonts/check/license/OFL_body_text>",
+                        [
+                            [
+                                "font",
+                                0
+                            ]
+                        ]
+                    ],
+                    "logs": [
+                        {
+                            "message": "OFL license body text is correct",
+                            "status": "PASS",
+                            "traceback": null
+                        }
+                    ],
+                    "rationale": "\n        Check OFL body text is correct. Often users will accidently delete parts of the body text.\n    ",
+                    "result": "PASS",
+                    "severity": 10
                 },
                 {
                     "description": "Check copyright namerecords match license file.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/name/license>",
@@ -569,17 +612,17 @@
                     ],
                     "logs": [
                         {
-                            "message": "Unfulfilled Conditions: license",
-                            "status": "SKIP",
+                            "message": "Licensing entry on name table is correctly set.",
+                            "status": "PASS",
                             "traceback": null
                         }
                     ],
                     "rationale": "\n        A known licensing description must be provided in the NameID 14 (LICENSE DESCRIPTION) entries of the name table.\n\n        The source of truth for this check (to determine which license is in use) is a file placed side-by-side to your font project including the licensing terms.\n\n        Depending on the chosen license, one of the following string snippets is expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name table:\n        - \"This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL\"\n        - \"Licensed under the Apache License, Version 2.0\"\n        - \"Licensed under the Ubuntu Font Licence 1.0.\"\n\n\n        Currently accepted licenses are Apache or Open Font License.\n        For a small set of legacy families the Ubuntu Font License may be acceptable as well.\n\n        When in doubt, please choose OFL for new font projects.\n    ",
-                    "result": "SKIP"
+                    "result": "PASS"
                 },
                 {
                     "description": "License URL matches License text on name table?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/name/license_url>",
@@ -602,7 +645,7 @@
                 },
                 {
                     "description": "Description strings in the name table must not exceed 200 characters.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/name/description_max_length>",
@@ -625,7 +668,7 @@
                 },
                 {
                     "description": "Show hinting filesize impact.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/hinting_impact>",
@@ -638,7 +681,7 @@
                     ],
                     "logs": [
                         {
-                            "message": "Hinting filesize impact:\n\n |               | fonts/Kablammov0.21[move].ttf          |\n |:------------- | ---------------:|\n | Dehinted Size | 2.4Mb |\n | Hinted Size   | 2.4Mb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n [code: size-impact]",
+                            "message": "Hinting filesize impact:\n\n |               | fonts/Kablammo[move].ttf          |\n |:------------- | ---------------:|\n | Dehinted Size | 2.4Mb |\n | Hinted Size   | 2.4Mb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n [code: size-impact]",
                             "status": "INFO",
                             "traceback": null
                         }
@@ -648,7 +691,7 @@
                 },
                 {
                     "description": "Version format is correct in 'name' table?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/name/version_format>",
@@ -670,7 +713,7 @@
                 },
                 {
                     "description": "Font has ttfautohint params?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/has_ttfautohint_params>",
@@ -692,7 +735,7 @@
                 },
                 {
                     "description": "Font has old ttfautohint applied?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/old_ttfautohint>",
@@ -715,7 +758,7 @@
                 },
                 {
                     "description": "EPAR table present in font?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/epar>",
@@ -738,7 +781,7 @@
                 },
                 {
                     "description": "Is the Grid-fitting and Scan-conversion Procedure ('gasp') table set to optimize rendering?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/gasp>",
@@ -766,7 +809,7 @@
                 },
                 {
                     "description": "Make sure family name does not begin with a digit.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/name/familyname_first_char>",
@@ -789,7 +832,7 @@
                 },
                 {
                     "description": "Are there non-ASCII characters in ASCII-only NAME table entries?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/name/ascii_only_entries>",
@@ -812,7 +855,7 @@
                 },
                 {
                     "description": "METADATA.pb: Fontfamily is listed on Google Fonts API?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/listed_on_gfonts>",
@@ -834,7 +877,7 @@
                 },
                 {
                     "description": "METADATA.pb: check if fonts field only has unique \"full_name\" values.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/unique_full_name_values>",
@@ -856,7 +899,7 @@
                 },
                 {
                     "description": "METADATA.pb: check if fonts field only contains unique style:weight pairs.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/unique_weight_style_pairs>",
@@ -878,7 +921,7 @@
                 },
                 {
                     "description": "METADATA.pb license is \"APACHE2\", \"UFL\" or \"OFL\"?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/license>",
@@ -900,7 +943,7 @@
                 },
                 {
                     "description": "METADATA.pb should contain at least \"menu\" and \"latin\" subsets.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/menu_and_latin>",
@@ -922,7 +965,7 @@
                 },
                 {
                     "description": "METADATA.pb subsets should be alphabetically ordered.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/subsets_order>",
@@ -944,7 +987,7 @@
                 },
                 {
                     "description": "Check METADATA.pb includes production subsets.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/includes_production_subsets>",
@@ -967,7 +1010,7 @@
                 },
                 {
                     "description": "METADATA.pb: Copyright notice is the same in all fonts?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/copyright>",
@@ -989,7 +1032,7 @@
                 },
                 {
                     "description": "Check that METADATA.pb family values are all the same.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/familyname>",
@@ -1011,7 +1054,7 @@
                 },
                 {
                     "description": "METADATA.pb: According to Google Fonts standards, families should have a Regular style.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/has_regular>",
@@ -1033,7 +1076,7 @@
                 },
                 {
                     "description": "METADATA.pb: Regular should be 400.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/regular_is_400>",
@@ -1055,7 +1098,7 @@
                 },
                 {
                     "description": "Checks METADATA.pb font.name field matches family name declared on the name table.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/nameid/family_name>",
@@ -1077,7 +1120,7 @@
                 },
                 {
                     "description": "Checks METADATA.pb font.post_script_name matches postscript name declared on the name table.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/nameid/post_script_name>",
@@ -1099,7 +1142,7 @@
                 },
                 {
                     "description": "METADATA.pb font.full_name value matches fullname declared on the name table?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/nameid/full_name>",
@@ -1121,7 +1164,7 @@
                 },
                 {
                     "description": "METADATA.pb font.name value should be same as the family name declared on the name table.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/nameid/font_name>",
@@ -1143,7 +1186,7 @@
                 },
                 {
                     "description": "METADATA.pb font.full_name and font.post_script_name fields have equivalent values ?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/match_fullname_postscript>",
@@ -1165,7 +1208,7 @@
                 },
                 {
                     "description": "METADATA.pb font.filename and font.post_script_name fields have equivalent values?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/match_filename_postscript>",
@@ -1187,7 +1230,7 @@
                 },
                 {
                     "description": "METADATA.pb font.name field contains font name in right format?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/valid_name_values>",
@@ -1209,7 +1252,7 @@
                 },
                 {
                     "description": "METADATA.pb font.full_name field contains font name in right format?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/valid_full_name_values>",
@@ -1231,7 +1274,7 @@
                 },
                 {
                     "description": "METADATA.pb font.filename field contains font name in right format?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/valid_filename_values>",
@@ -1253,7 +1296,7 @@
                 },
                 {
                     "description": "METADATA.pb font.post_script_name field contains font name in right format?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/valid_post_script_name_values>",
@@ -1275,7 +1318,7 @@
                 },
                 {
                     "description": "Copyright notices match canonical pattern in METADATA.pb",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/valid_copyright>",
@@ -1293,12 +1336,12 @@
                             "traceback": null
                         }
                     ],
-                    "rationale": "\n        The expected pattern for the copyright string adheres to the following rules:\n        * It must say \"Copyright\" followed by a 4 digit year (optionally followed by a hyphen and another 4 digit year)\n        * Then it must say \"The <familyname> Project Authors\"\n        * And within parentheses, a URL for a git repository must be provided\n        * The check is case insensitive and does not validate whether the familyname is correct, even though we'd expect it is (and we may soon update the check to validate that aspect as well!)\n\n        Here is an example of a valid copyright string:\n        \"Copyright 2017 The Archivo Black Project Authors (https://github.com/Omnibus-Type/ArchivoBlack)\"\n  ",
+                    "rationale": "\n        The expected pattern for the copyright string adheres to the following rules:\n        * It must say \"Copyright\" followed by a 4 digit year (optionally followed by a hyphen and another 4 digit year)\n        * Then it must say \"The <familyname> Project Authors\"\n        * And within parentheses, a URL for a git repository must be provided\n        * The check is case insensitive and does not validate whether the familyname is correct, even though we'd expect it is (and we may soon update the check to validate that aspect as well!)\n\n        Here is an example of a valid copyright string:\n        \"Copyright 2017 The Archivo Black Project Authors (https://github.com/Omnibus-Type/ArchivoBlack)\"\n    ",
                     "result": "SKIP"
                 },
                 {
                     "description": "Copyright notices match canonical pattern in fonts",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/font_copyright>",
@@ -1311,7 +1354,7 @@
                     ],
                     "logs": [
                         {
-                            "message": "Name Table entry: Copyright field 'Copyright 2021 The Kablammo Project Authors (https://github.com/scribbletone/kablammo)' matches canonical pattern.",
+                            "message": "Name Table entry: Copyright field 'Copyright 2021 The Kablammo Project Authors (https://github.com/Vectro-Type-Foundry/kablammo)' matches canonical pattern.",
                             "status": "PASS",
                             "traceback": null
                         },
@@ -1325,7 +1368,7 @@
                 },
                 {
                     "description": "Copyright notice on METADATA.pb should not contain 'Reserved Font Name'.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/reserved_font_name>",
@@ -1347,7 +1390,7 @@
                 },
                 {
                     "description": "METADATA.pb: Copyright notice shouldn't exceed 500 chars.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/copyright_max_length>",
@@ -1369,7 +1412,7 @@
                 },
                 {
                     "description": "METADATA.pb: Font filenames match font.filename entries?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/filenames>",
@@ -1392,7 +1435,7 @@
                 },
                 {
                     "description": "METADATA.pb font.style \"italic\" matches font internals?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/italic_style>",
@@ -1414,7 +1457,7 @@
                 },
                 {
                     "description": "METADATA.pb font.style \"normal\" matches font internals?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/normal_style>",
@@ -1436,7 +1479,7 @@
                 },
                 {
                     "description": "METADATA.pb font.name and font.full_name fields match the values declared on the name table?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/nameid/family_and_full_names>",
@@ -1458,7 +1501,7 @@
                 },
                 {
                     "description": "METADATA.pb: Check if fontname is not camel cased.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/fontname_not_camel_cased>",
@@ -1480,7 +1523,7 @@
                 },
                 {
                     "description": "METADATA.pb: Check font name is the same as family name.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/match_name_familyname>",
@@ -1502,7 +1545,7 @@
                 },
                 {
                     "description": "METADATA.pb: Check that font weight has a canonical value.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/canonical_weight_value>",
@@ -1524,7 +1567,7 @@
                 },
                 {
                     "description": "Check METADATA.pb font weights are correct.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/os2_weightclass>",
@@ -1547,7 +1590,7 @@
                 },
                 {
                     "description": "METADATA.pb weight matches postScriptName for static fonts.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/match_weight_postscript>",
@@ -1569,7 +1612,7 @@
                 },
                 {
                     "description": "METADATA.pb: Font styles are named canonically?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/canonical_style_names>",
@@ -1591,7 +1634,7 @@
                 },
                 {
                     "description": "Stricter unitsPerEm criteria for Google Fonts. ",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/unitsperem_strict>",
@@ -1614,7 +1657,7 @@
                 },
                 {
                     "description": "Version number has increased since previous release on Google Fonts?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/version_bump>",
@@ -1636,7 +1679,7 @@
                 },
                 {
                     "description": "Glyphs are similiar to Google Fonts version?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/production_glyphs_similarity>",
@@ -1658,7 +1701,7 @@
                 },
                 {
                     "description": "Checking OS/2 fsSelection value.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/fsselection>",
@@ -1680,7 +1723,7 @@
                 },
                 {
                     "description": "Checking post.italicAngle value.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/italic_angle>",
@@ -1703,7 +1746,7 @@
                 },
                 {
                     "description": "Checking head.macStyle value.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/mac_style>",
@@ -1726,7 +1769,7 @@
                 },
                 {
                     "description": "Check if each glyph has the recommended amount of contours.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/contour_count>",
@@ -1749,7 +1792,7 @@
                 },
                 {
                     "description": "Copyright field for this font on METADATA.pb matches all copyright notice entries on the name table ?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/nameid/copyright>",
@@ -1771,7 +1814,7 @@
                 },
                 {
                     "description": "Font has all mandatory 'name' table entries?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/name/mandatory_entries>",
@@ -1793,7 +1836,7 @@
                 },
                 {
                     "description": "Check name table: FONT_FAMILY_NAME entries.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/name/familyname>",
@@ -1816,7 +1859,7 @@
                 },
                 {
                     "description": "Check name table: FONT_SUBFAMILY_NAME entries.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/name/subfamilyname>",
@@ -1838,7 +1881,7 @@
                 },
                 {
                     "description": "Check name table: FULL_FONT_NAME entries.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/name/fullfontname>",
@@ -1861,7 +1904,7 @@
                 },
                 {
                     "description": "Check name table: POSTSCRIPT_NAME entries.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/name/postscriptname>",
@@ -1884,7 +1927,7 @@
                 },
                 {
                     "description": "Check name table: TYPOGRAPHIC_FAMILY_NAME entries.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/name/typographicfamilyname>",
@@ -1907,7 +1950,7 @@
                 },
                 {
                     "description": "Check name table: TYPOGRAPHIC_SUBFAMILY_NAME entries.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/name/typographicsubfamilyname>",
@@ -1930,7 +1973,7 @@
                 },
                 {
                     "description": "Length of copyright notice must not exceed 500 characters.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/name/copyright_length>",
@@ -1953,7 +1996,7 @@
                 },
                 {
                     "description": "Familyname must be unique according to namecheck.fontdata.com",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/fontdata_namecheck>",
@@ -1976,7 +2019,7 @@
                 },
                 {
                     "description": "Check for font-v versioning.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/fontv>",
@@ -1999,7 +2042,7 @@
                 },
                 {
                     "description": "Check a static ttf can be generated from a variable font.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/varfont/generate_static>",
@@ -2022,7 +2065,7 @@
                 },
                 {
                     "description": "Check that variable fonts have an HVAR table.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/varfont/has_HVAR>",
@@ -2045,7 +2088,7 @@
                 },
                 {
                     "description": "Font enables smart dropout control in \"prep\" table instructions?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/smart_dropout>",
@@ -2068,7 +2111,7 @@
                 },
                 {
                     "description": "There must not be VTT Talk sources in the font.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/vttclean>",
@@ -2091,7 +2134,7 @@
                 },
                 {
                     "description": "Are there unwanted Apple tables?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/aat>",
@@ -2114,7 +2157,7 @@
                 },
                 {
                     "description": "All name entries referenced by fvar instances exist on the name table?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/fvar_name_entries>",
@@ -2137,7 +2180,7 @@
                 },
                 {
                     "description": "A variable font must have named instances.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/varfont_has_instances>",
@@ -2160,7 +2203,7 @@
                 },
                 {
                     "description": "Variable font weight coordinates must be multiples of 100.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/varfont_weight_instances>",
@@ -2183,7 +2226,7 @@
                 },
                 {
                     "description": "PPEM must be an integer on hinted fonts.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/integer_ppem_if_hinted>",
@@ -2206,7 +2249,7 @@
                 },
                 {
                     "description": "Are there caret positions declared for every ligature?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/ligature_carets>",
@@ -2229,7 +2272,7 @@
                 },
                 {
                     "description": "Is there kerning info for non-ligated sequences?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/kerning_for_non_ligated_sequences>",
@@ -2252,7 +2295,7 @@
                 },
                 {
                     "description": "Combined length of family and style must not exceed 27 characters.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/name/family_and_style_max_length>",
@@ -2275,7 +2318,7 @@
                 },
                 {
                     "description": "Name table entries should not contain line-breaks.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/name/line_breaks>",
@@ -2298,7 +2341,7 @@
                 },
                 {
                     "description": "Name table strings must not contain the string 'Reserved Font Name'.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/name/rfn>",
@@ -2321,7 +2364,7 @@
                 },
                 {
                     "description": "Directory name in GFonts repo structure must match NameID 1 of the regular.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/repo/dirname_matches_nameid_1>",
@@ -2343,7 +2386,7 @@
                 },
                 {
                     "description": "A static fonts directory with at least two fonts must accompany variable fonts",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/repo/vf_has_static_fonts>",
@@ -2366,7 +2409,7 @@
                 },
                 {
                     "description": "A font repository should not include fontbakery report files",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/repo/fb_report>",
@@ -2388,8 +2431,32 @@
                     "result": "PASS"
                 },
                 {
+                    "description": "Check upstream.yaml file contains all required fields",
+                    "filename": "fonts/Kablammo[move].ttf",
+                    "key": [
+                        "<Section: Google Fonts>",
+                        "<FontBakeryCheck:com.google/fonts/check/repo/upstream_yaml_has_required_fields>",
+                        [
+                            [
+                                "font",
+                                0
+                            ]
+                        ]
+                    ],
+                    "logs": [
+                        {
+                            "message": "Unfulfilled Conditions: upstream_yaml",
+                            "status": "SKIP",
+                            "traceback": null
+                        }
+                    ],
+                    "rationale": "\n        If a family has been pushed using the gftools packager, we must check that all the required fields in the upstream.yaml file have been populated.\n    ",
+                    "result": "SKIP",
+                    "severity": 10
+                },
+                {
                     "description": "A font repository should not include ZIP files",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/repo/zip_files>",
@@ -2412,7 +2479,7 @@
                 },
                 {
                     "description": "Check if the vertical metrics of a family are similar to the same family hosted on Google Fonts.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/vertical_metrics_regressions>",
@@ -2435,7 +2502,7 @@
                 },
                 {
                     "description": "Check font follows the Google Fonts CJK vertical metric schema",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/cjk_vertical_metrics>",
@@ -2458,7 +2525,7 @@
                 },
                 {
                     "description": "Check if the vertical metrics of a CJK family are similar to the same family hosted on Google Fonts.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/cjk_vertical_metrics_regressions>",
@@ -2481,7 +2548,7 @@
                 },
                 {
                     "description": "Does the font contain less than 40 CJK characters?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/cjk_not_enough_glyphs>",
@@ -2504,7 +2571,7 @@
                 },
                 {
                     "description": "Check variable font instances have correct coordinate values",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/varfont_instance_coordinates>",
@@ -2526,7 +2593,7 @@
                 },
                 {
                     "description": "Check variable font instances have correct names",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/varfont_instance_names>",
@@ -2548,7 +2615,7 @@
                 },
                 {
                     "description": "Check variable font instances don't have duplicate names",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/varfont_duplicate_instance_names>",
@@ -2571,7 +2638,7 @@
                 },
                 {
                     "description": "Ensure VFs do not contain slnt or ital axes. ",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/varfont/unsupported_axes>",
@@ -2594,7 +2661,7 @@
                 },
                 {
                     "description": "Validate METADATA.pb axes values are within gf-axisregistry bounds. ",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/gf-axisregistry_bounds>",
@@ -2617,7 +2684,7 @@
                 },
                 {
                     "description": "Validate METADATA.pb axes tags are defined in gf-axisregistry. ",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/gf-axisregistry_valid_tags>",
@@ -2640,7 +2707,7 @@
                 },
                 {
                     "description": "Validate defaults on fvar table match registered fallback names in GFAxisRegistry. ",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/gf-axisregistry/fvar_axis_defaults>",
@@ -2663,7 +2730,7 @@
                 },
                 {
                     "description": "Validate STAT particle names and values match the fallback names in GFAxisRegistry. ",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/STAT/gf-axisregistry>",
@@ -2686,7 +2753,7 @@
                 },
                 {
                     "description": "Validate VF axes match the ones declared on METADATA.pb. ",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/consistent_axis_enumeration>",
@@ -2709,7 +2776,7 @@
                 },
                 {
                     "description": "Ensure METADATA.pb does not use escaped strings.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/escaped_strings>",
@@ -2732,7 +2799,7 @@
                 },
                 {
                     "description": "METADATA.pb: Designer is listed with the correct name on the Google Fonts catalog of designers?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/metadata/designer_profiles>",
@@ -2754,7 +2821,7 @@
                 },
                 {
                     "description": "Ensure variable fonts include an avar table.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/mandatory_avar_table>",
@@ -2777,7 +2844,7 @@
                 },
                 {
                     "description": "On a family update, the DESCRIPTION.en_us.html file should ideally also be updated.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/description/family_update>",
@@ -2800,7 +2867,7 @@
                 },
                 {
                     "description": "Check small caps glyphs are available.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/missing_small_caps_glyphs>",
@@ -2818,12 +2885,12 @@
                             "traceback": null
                         }
                     ],
-                    "rationale": "\n        Ensure small caps glyphs are available if a font declares smcp or c2sc OT features\n    ",
+                    "rationale": "\n        Ensure small caps glyphs are available if a font declares smcp or c2sc OT features.\n    ",
                     "result": "PASS"
                 },
                 {
                     "description": "Ensure Stylistic Sets have description.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Google Fonts>",
                         "<FontBakeryCheck:com.google.fonts/check/stylisticset_description>",
@@ -2843,6 +2910,78 @@
                     ],
                     "rationale": "\n        Stylistic sets should provide description text. Programs such as InDesign, TextEdit and Inkscape use that info to display to the users so that they know what a given stylistic set offers.\n    ",
                     "result": "PASS"
+                },
+                {
+                    "description": "OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts.",
+                    "filename": "fonts/Kablammo[move].ttf",
+                    "key": [
+                        "<Section: Google Fonts>",
+                        "<FontBakeryCheck:com.google.fonts/check/os2/use_typo_metrics>",
+                        [
+                            [
+                                "font",
+                                0
+                            ]
+                        ]
+                    ],
+                    "logs": [
+                        {
+                            "message": "OK",
+                            "status": "PASS",
+                            "traceback": null
+                        }
+                    ],
+                    "rationale": "\n        All fonts on the Google Fonts collection should have OS/2.fsSelection bit 7 (USE_TYPO_METRICS) set. This requirement is part of the vertical metrics scheme established as a Google Fonts policy aiming at a common ground supported by all major font rendering environments.\n\n        For more details, read:\n        https://github.com/googlefonts/gf-docs/blob/main/VerticalMetrics/README.md\n\n        Below is the portion of that document that is most relevant to this check:\n\n        Use_Typo_Metrics must be enabled. This will force MS Applications to use the OS/2 Typo values instead of the Win values. By doing this, we can freely set the Win values to avoid clipping and control the line height with the typo values. It has the added benefit of future line height compatibility. When a new script is added, we simply change the Win values to the new yMin and yMax, without needing to worry if the line height have changed.\n    ",
+                    "result": "PASS",
+                    "severity": 10
+                },
+                {
+                    "description": "Ensure fonts have ScriptLangTags declared on the 'meta' table.",
+                    "filename": "fonts/Kablammo[move].ttf",
+                    "key": [
+                        "<Section: Google Fonts>",
+                        "<FontBakeryCheck:com.google.fonts/check/meta/script_lang_tags>",
+                        [
+                            [
+                                "font",
+                                0
+                            ]
+                        ]
+                    ],
+                    "logs": [
+                        {
+                            "message": "This font file does not have a 'meta' table. [code: lacks-meta-table]",
+                            "status": "WARN",
+                            "traceback": null
+                        }
+                    ],
+                    "rationale": "\n        The OpenType 'meta' table originated at Apple. Microsoft added it to OT with just two DataMap records:\n\n        - dlng: comma-separated ScriptLangTags that indicate which scripts, or languages and scripts, with possible variants, the font is designed for\n        - slng: comma-separated ScriptLangTags that indicate which scripts, or languages and scripts, with possible variants, the font supports\n\n        The slng structure is intended to describe which languages and scripts the font overall supports. For example, a Traditional Chinese font that also contains Latin characters, can indicate Hant,Latn, showing that it supports Hant, the Traditional Chinese variant of the Hani script, and it also supports the Latn script\n\n        The dlng structure is far more interesting. A font may contain various glyphs, but only a particular subset of the glyphs may be truly \"leading\" in the design, while other glyphs may have been included for technical reasons. Such a Traditional Chinese font could only list Hant there, showing that it\u2019s designed for Traditional Chinese, but the font would omit Latn, because the developers don\u2019t think the font is really recommended for purely Latin-script use.\n\n        The tags used in the structures can comprise just script, or also language and script. For example, if a font has Bulgarian Cyrillic alternates in the locl feature for the cyrl BGR OT languagesystem, it could also indicate in dlng explicitly that it supports bul-Cyrl. (Note that the scripts and languages in meta use the ISO language and script codes, not the OpenType ones).\n\n        This check ensures that the font has the meta table containing the slng and dlng structures.\n\n        All families in the Google Fonts collection should contain the 'meta' table. Windows 10 already uses it when deciding on which fonts to fall back to. The Google Fonts API and also other environments could use the data for smarter filtering. Most importantly, those entries should be added to the Noto fonts.\n\n        In the font making process, some environments store this data in external files already. But the meta table provides a convenient way to store this inside the font file, so some tools may add the data, and unrelated tools may read this data. This makes the solution much more portable and universal.\n    ",
+                    "result": "WARN",
+                    "severity": 3
+                },
+                {
+                    "description": "Ensure fonts do not contain any pre-production tables.",
+                    "filename": "fonts/Kablammo[move].ttf",
+                    "key": [
+                        "<Section: Google Fonts>",
+                        "<FontBakeryCheck:com.google.fonts/check/no_debugging_tables>",
+                        [
+                            [
+                                "font",
+                                0
+                            ]
+                        ]
+                    ],
+                    "logs": [
+                        {
+                            "message": "OK",
+                            "status": "PASS",
+                            "traceback": null
+                        }
+                    ],
+                    "rationale": "\n        Tables such as `Debg` are useful in the pre-production stages of font development, but add unnecessary bloat to a production font and should be removed before release.\n    ",
+                    "result": "PASS",
+                    "severity": 6
                 }
             ],
             "key": [
@@ -2853,9 +2992,9 @@
             "result": {
                 "FAIL": 1,
                 "INFO": 6,
-                "PASS": 39,
-                "SKIP": 79,
-                "WARN": 1
+                "PASS": 45,
+                "SKIP": 78,
+                "WARN": 2
             }
         },
         {
@@ -2908,6 +3047,7 @@
                             "traceback": null
                         }
                     ],
+                    "rationale": "\n        Running old versions of FontBakery can lead to a poor report which may include false WARNs and FAILs due do bugs, as well as outdated quality assurance criteria.\n\n        Older versions will also not report problems that are detected by new checks added to the tool in more recent updates.\n    ",
                     "result": "PASS"
                 },
                 {
@@ -2929,7 +3069,7 @@
                 },
                 {
                     "description": "Name table records must not have trailing spaces.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Universal>",
                         "<FontBakeryCheck:com.google.fonts/check/name/trailing_spaces>",
@@ -2951,7 +3091,7 @@
                 },
                 {
                     "description": "Checking OS/2 usWinAscent & usWinDescent.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Universal>",
                         "<FontBakeryCheck:com.google.fonts/check/family/win_ascent_and_descent>",
@@ -2974,7 +3114,7 @@
                 },
                 {
                     "description": "Checking OS/2 Metrics match hhea Metrics.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Universal>",
                         "<FontBakeryCheck:com.google.fonts/check/os2_metrics_match_hhea>",
@@ -2997,7 +3137,7 @@
                 },
                 {
                     "description": "Checking with ftxvalidator.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Universal>",
                         "<FontBakeryCheck:com.google.fonts/check/ftxvalidator>",
@@ -3019,7 +3159,7 @@
                 },
                 {
                     "description": "Checking with ots-sanitize.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Universal>",
                         "<FontBakeryCheck:com.google.fonts/check/ots>",
@@ -3041,7 +3181,7 @@
                 },
                 {
                     "description": "Font contains '.notdef' as its first glyph?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Universal>",
                         "<FontBakeryCheck:com.google.fonts/check/mandatory_glyphs>",
@@ -3064,7 +3204,7 @@
                 },
                 {
                     "description": "Font contains glyphs for whitespace characters?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Universal>",
                         "<FontBakeryCheck:com.google.fonts/check/whitespace_glyphs>",
@@ -3086,7 +3226,7 @@
                 },
                 {
                     "description": "Font has **proper** whitespace glyph names?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Universal>",
                         "<FontBakeryCheck:com.google.fonts/check/whitespace_glyphnames>",
@@ -3109,7 +3249,7 @@
                 },
                 {
                     "description": "Whitespace glyphs have ink?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Universal>",
                         "<FontBakeryCheck:com.google.fonts/check/whitespace_ink>",
@@ -3131,7 +3271,7 @@
                 },
                 {
                     "description": "Font contains all required tables?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Universal>",
                         "<FontBakeryCheck:com.google.fonts/check/required_tables>",
@@ -3159,7 +3299,7 @@
                 },
                 {
                     "description": "Are there unwanted tables?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Universal>",
                         "<FontBakeryCheck:com.google.fonts/check/unwanted_tables>",
@@ -3182,7 +3322,7 @@
                 },
                 {
                     "description": "Check correctness of STAT table strings ",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Universal>",
                         "<FontBakeryCheck:com.google.fonts/check/STAT_strings>",
@@ -3205,7 +3345,7 @@
                 },
                 {
                     "description": "Glyph names are all valid?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Universal>",
                         "<FontBakeryCheck:com.google.fonts/check/valid_glyphnames>",
@@ -3228,7 +3368,7 @@
                 },
                 {
                     "description": "Font contains unique glyph names?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Universal>",
                         "<FontBakeryCheck:com.google.fonts/check/unique_glyphnames>",
@@ -3251,7 +3391,7 @@
                 },
                 {
                     "description": "Checking with fontTools.ttx",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Universal>",
                         "<FontBakeryCheck:com.google.fonts/check/ttx-roundtrip>",
@@ -3273,7 +3413,7 @@
                 },
                 {
                     "description": "List all superfamily filepaths",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Universal>",
                         "<FontBakeryCheck:com.google.fonts/check/superfamily/list>",
@@ -3296,7 +3436,7 @@
                 },
                 {
                     "description": "Each font in set of sibling families must have the same set of vertical metrics values.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Universal>",
                         "<FontBakeryCheck:com.google.fonts/check/superfamily/vertical_metrics>",
@@ -3314,12 +3454,12 @@
                             "traceback": null
                         }
                     ],
-                    "rationale": "\n        We may want all fonts within a super-family (all sibling families) to have the same vertical metrics so their line spacing is consistent across the super-family.\n\n        This is an experimental extended version of com.google.fonts/check/superfamily/vertical_metrics and for now it will only result in WARNs.\n    ",
+                    "rationale": "\n        We may want all fonts within a super-family (all sibling families) to have the same vertical metrics so their line spacing is consistent across the super-family.\n\n        This is an experimental extended version of com.google.fonts/check/family/vertical_metrics and for now it will only result in WARNs.\n    ",
                     "result": "SKIP"
                 },
                 {
                     "description": "Ensure indic fonts have the Indian Rupee Sign glyph. ",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Universal>",
                         "<FontBakeryCheck:com.google.fonts/check/rupee>",
@@ -3357,7 +3497,7 @@
             "checks": [
                 {
                     "description": "Is the CFF subr/gsubr call depth > 10?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.cff>",
                         "<FontBakeryCheck:com.adobe.fonts/check/cff_call_depth>",
@@ -3380,7 +3520,7 @@
                 },
                 {
                     "description": "Is the CFF2 subr/gsubr call depth > 10?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.cff>",
                         "<FontBakeryCheck:com.adobe.fonts/check/cff2_call_depth>",
@@ -3403,7 +3543,7 @@
                 },
                 {
                     "description": "Does the font use deprecated CFF operators or operations?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.cff>",
                         "<FontBakeryCheck:com.adobe.fonts/check/cff_deprecated_operators>",
@@ -3454,7 +3594,7 @@
                 },
                 {
                     "description": "Check all glyphs have codepoints assigned.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.cmap>",
                         "<FontBakeryCheck:com.google.fonts/check/all_glyphs_have_codepoints>",
@@ -3504,7 +3644,7 @@
                 },
                 {
                     "description": "Checking unitsPerEm value is reasonable.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.head>",
                         "<FontBakeryCheck:com.google.fonts/check/unitsperem>",
@@ -3527,7 +3667,7 @@
                 },
                 {
                     "description": "Checking font version fields (head and name table).",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.head>",
                         "<FontBakeryCheck:com.google.fonts/check/font_version>",
@@ -3610,7 +3750,7 @@
                 },
                 {
                     "description": "Check if OS/2 xAvgCharWidth is correct.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.os2>",
                         "<FontBakeryCheck:com.google.fonts/check/xavgcharwidth>",
@@ -3632,7 +3772,7 @@
                 },
                 {
                     "description": "Check if OS/2 fsSelection matches head macStyle bold and italic bits.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.os2>",
                         "<FontBakeryCheck:com.adobe.fonts/check/fsselection_matches_macstyle>",
@@ -3655,7 +3795,7 @@
                 },
                 {
                     "description": "Check code page character ranges",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.os2>",
                         "<FontBakeryCheck:com.google.fonts/check/code_pages>",
@@ -3708,7 +3848,7 @@
                 },
                 {
                     "description": "Font has correct post table version?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.post>",
                         "<FontBakeryCheck:com.google.fonts/check/post_table_version>",
@@ -3760,7 +3900,7 @@
                 },
                 {
                     "description": "Check name table for empty records.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.name>",
                         "<FontBakeryCheck:com.adobe.fonts/check/name/empty_records>",
@@ -3783,7 +3923,7 @@
                 },
                 {
                     "description": "Description strings in the name table must not contain copyright info.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.name>",
                         "<FontBakeryCheck:com.google.fonts/check/name/no_copyright_on_description>",
@@ -3805,7 +3945,7 @@
                 },
                 {
                     "description": "Checking correctness of monospaced metadata.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.name>",
                         "<FontBakeryCheck:com.google.fonts/check/monospace>",
@@ -3828,7 +3968,7 @@
                 },
                 {
                     "description": "Does full font name begin with the font family name?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.name>",
                         "<FontBakeryCheck:com.google.fonts/check/name/match_familyname_fullfont>",
@@ -3850,7 +3990,7 @@
                 },
                 {
                     "description": "Font follows the family naming recommendations?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.name>",
                         "<FontBakeryCheck:com.google.fonts/check/family_naming_recommendations>",
@@ -3863,16 +4003,16 @@
                     ],
                     "logs": [
                         {
-                            "message": "Font does not follow some family naming recommendations:\n\n| Field | Value | Recommendation |\n|:----- |:----- |:-------------- |\n| PostScript Name | Kablammov0.21-A | May contain only a-zA-Z0-9 characters and an hyphen. |\n [code: bad-entries]",
-                            "status": "INFO",
+                            "message": "Font follows the family naming recommendations.",
+                            "status": "PASS",
                             "traceback": null
                         }
                     ],
-                    "result": "INFO"
+                    "result": "PASS"
                 },
                 {
                     "description": "CFF table FontName must match name table ID 6 (PostScript name).",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.name>",
                         "<FontBakeryCheck:com.adobe.fonts/check/name/postscript_vs_cff>",
@@ -3895,7 +4035,7 @@
                 },
                 {
                     "description": "Name table ID 6 (PostScript name) must be consistent across platforms.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.name>",
                         "<FontBakeryCheck:com.adobe.fonts/check/name/postscript_name_consistency>",
@@ -3913,7 +4053,7 @@
                             "traceback": null
                         }
                     ],
-                    "rationale": "\n        The PostScript name entries in the font's 'name' table should be consistent across platforms.\n\n        This is the TTF/CFF2 equivalent of the CFF 'postscript_name_cff_vs_name' check.\n    ",
+                    "rationale": "\n        The PostScript name entries in the font's 'name' table should be consistent across platforms.\n\n        This is the TTF/CFF2 equivalent of the CFF 'name/postscript_vs_cff' check.\n    ",
                     "result": "PASS"
                 }
             ],
@@ -3923,8 +4063,7 @@
                 null
             ],
             "result": {
-                "INFO": 1,
-                "PASS": 6,
+                "PASS": 7,
                 "SKIP": 1
             }
         },
@@ -3932,7 +4071,7 @@
             "checks": [
                 {
                     "description": "Does the number of glyphs in the loca table match the maxp table?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.loca>",
                         "<FontBakeryCheck:com.google.fonts/check/loca/maxp_num_glyphs>",
@@ -3966,7 +4105,7 @@
             "checks": [
                 {
                     "description": "Checking Vertical Metric Linegaps.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.hhea>",
                         "<FontBakeryCheck:com.google.fonts/check/linegaps>",
@@ -3988,7 +4127,7 @@
                 },
                 {
                     "description": "MaxAdvanceWidth is consistent with values in the Hmtx and Hhea tables?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.hhea>",
                         "<FontBakeryCheck:com.google.fonts/check/maxadvancewidth>",
@@ -4022,7 +4161,7 @@
             "checks": [
                 {
                     "description": "Does the font have a DSIG table?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.dsig>",
                         "<FontBakeryCheck:com.google.fonts/check/dsig>",
@@ -4057,7 +4196,7 @@
             "checks": [
                 {
                     "description": "Space and non-breaking space have the same width?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.hmtx>",
                         "<FontBakeryCheck:com.google.fonts/check/whitespace_widths>",
@@ -4091,7 +4230,7 @@
             "checks": [
                 {
                     "description": "Check mark characters are in GDEF mark glyph class)",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.gdef>",
                         "<FontBakeryCheck:com.google.fonts/check/gdef_spacing_marks>",
@@ -4114,7 +4253,7 @@
                 },
                 {
                     "description": "Check mark characters are in GDEF mark glyph class",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.gdef>",
                         "<FontBakeryCheck:com.google.fonts/check/gdef_mark_chars>",
@@ -4137,7 +4276,7 @@
                 },
                 {
                     "description": "Check GDEF mark glyph class doesn't have characters that are not marks)",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.gdef>",
                         "<FontBakeryCheck:com.google.fonts/check/gdef_non_mark_chars>",
@@ -4172,7 +4311,7 @@
             "checks": [
                 {
                     "description": "Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.gpos>",
                         "<FontBakeryCheck:com.google.fonts/check/gpos_kerning_info>",
@@ -4206,7 +4345,7 @@
             "checks": [
                 {
                     "description": "Is there a usable \"kern\" table declared in the font?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.kern>",
                         "<FontBakeryCheck:com.google.fonts/check/kern_table>",
@@ -4241,7 +4380,7 @@
             "checks": [
                 {
                     "description": "Is there any unused data at the end of the glyf table?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.glyf>",
                         "<FontBakeryCheck:com.google.fonts/check/glyf_unused_data>",
@@ -4263,7 +4402,7 @@
                 },
                 {
                     "description": "Check for points out of bounds.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.glyf>",
                         "<FontBakeryCheck:com.google.fonts/check/points_out_of_bounds>",
@@ -4285,7 +4424,7 @@
                 },
                 {
                     "description": "Check glyphs do not have duplicate components which have the same x,y coordinates.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.glyf>",
                         "<FontBakeryCheck:com.google.fonts/check/glyf_non_transformed_duplicate_components>",
@@ -4308,7 +4447,7 @@
                 },
                 {
                     "description": "Check glyphs do not have components which are themselves components.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.glyf>",
                         "<FontBakeryCheck:com.google.fonts/check/glyf_nested_components>",
@@ -4343,7 +4482,7 @@
             "checks": [
                 {
                     "description": "The variable font 'wght' (Weight) axis coordinate must be 400 on the 'Regular' instance.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.fvar>",
                         "<FontBakeryCheck:com.google.fonts/check/varfont/regular_wght_coord>",
@@ -4366,7 +4505,7 @@
                 },
                 {
                     "description": "The variable font 'wdth' (Width) axis coordinate must be 100 on the 'Regular' instance.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.fvar>",
                         "<FontBakeryCheck:com.google.fonts/check/varfont/regular_wdth_coord>",
@@ -4389,7 +4528,7 @@
                 },
                 {
                     "description": "The variable font 'slnt' (Slant) axis coordinate must be zero on the 'Regular' instance.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.fvar>",
                         "<FontBakeryCheck:com.google.fonts/check/varfont/regular_slnt_coord>",
@@ -4412,7 +4551,7 @@
                 },
                 {
                     "description": "The variable font 'ital' (Italic) axis coordinate must be zero on the 'Regular' instance.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.fvar>",
                         "<FontBakeryCheck:com.google.fonts/check/varfont/regular_ital_coord>",
@@ -4435,7 +4574,7 @@
                 },
                 {
                     "description": "The variable font 'opsz' (Optical Size) axis coordinate should be between 10 and 16 on the 'Regular' instance.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.fvar>",
                         "<FontBakeryCheck:com.google.fonts/check/varfont/regular_opsz_coord>",
@@ -4458,7 +4597,7 @@
                 },
                 {
                     "description": "The variable font 'wght' (Weight) axis coordinate must be 700 on the 'Bold' instance.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.fvar>",
                         "<FontBakeryCheck:com.google.fonts/check/varfont/bold_wght_coord>",
@@ -4481,7 +4620,7 @@
                 },
                 {
                     "description": "The variable font 'wght' (Weight) axis coordinate must be within spec range of 1 to 1000 on all instances.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.fvar>",
                         "<FontBakeryCheck:com.google.fonts/check/varfont/wght_valid_range>",
@@ -4504,7 +4643,7 @@
                 },
                 {
                     "description": "The variable font 'wdth' (Weight) axis coordinate must be within spec range of 1 to 1000 on all instances.",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.fvar>",
                         "<FontBakeryCheck:com.google.fonts/check/varfont/wdth_valid_range>",
@@ -4527,7 +4666,7 @@
                 },
                 {
                     "description": "The variable font 'slnt' (Slant) axis coordinate specifies positive values in its range? ",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.fvar>",
                         "<FontBakeryCheck:com.google.fonts/check/varfont/slnt_range>",
@@ -4563,7 +4702,7 @@
             "checks": [
                 {
                     "description": "All fvar axes have a correspondent Axis Record on STAT table? ",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: fontbakery.profiles.stat>",
                         "<FontBakeryCheck:com.google.fonts/check/varfont/stat_axis_record_for_each_axis>",
@@ -4597,8 +4736,92 @@
         {
             "checks": [
                 {
+                    "description": "Does the font have any invalid feature tags?",
+                    "filename": "fonts/Kablammo[move].ttf",
+                    "key": [
+                        "<Section: fontbakery.profiles.layout>",
+                        "<FontBakeryCheck:com.google.fonts/check/layout_valid_feature_tags>",
+                        [
+                            [
+                                "font",
+                                0
+                            ]
+                        ]
+                    ],
+                    "logs": [
+                        {
+                            "message": "No invalid feature tags were found",
+                            "status": "PASS",
+                            "traceback": null
+                        }
+                    ],
+                    "rationale": "\n        Incorrect tags can be indications of typos, leftover debugging code or questionable approaches, or user error in the font editor. Such typos can cause features and language support to fail to work as intended.\n    ",
+                    "result": "PASS",
+                    "severity": 8
+                },
+                {
+                    "description": "Does the font have any invalid script tags?",
+                    "filename": "fonts/Kablammo[move].ttf",
+                    "key": [
+                        "<Section: fontbakery.profiles.layout>",
+                        "<FontBakeryCheck:com.google.fonts/check/layout_valid_script_tags>",
+                        [
+                            [
+                                "font",
+                                0
+                            ]
+                        ]
+                    ],
+                    "logs": [
+                        {
+                            "message": "No invalid script tags were found",
+                            "status": "PASS",
+                            "traceback": null
+                        }
+                    ],
+                    "rationale": "\n        Incorrect script tags can be indications of typos, leftover debugging code or questionable approaches, or user error in the font editor. Such typos can cause features and language support to fail to work as intended.\n    ",
+                    "result": "PASS",
+                    "severity": 8
+                },
+                {
+                    "description": "Does the font have any invalid language tags?",
+                    "filename": "fonts/Kablammo[move].ttf",
+                    "key": [
+                        "<Section: fontbakery.profiles.layout>",
+                        "<FontBakeryCheck:com.google.fonts/check/layout_valid_language_tags>",
+                        [
+                            [
+                                "font",
+                                0
+                            ]
+                        ]
+                    ],
+                    "logs": [
+                        {
+                            "message": "No invalid language tags were found",
+                            "status": "PASS",
+                            "traceback": null
+                        }
+                    ],
+                    "rationale": "\n        Incorrect language tags can be indications of typos, leftover debugging code or questionable approaches, or user error in the font editor. Such typos can cause features and language support to fail to work as intended.\n    ",
+                    "result": "PASS",
+                    "severity": 8
+                }
+            ],
+            "key": [
+                "<Section: fontbakery.profiles.layout>",
+                null,
+                null
+            ],
+            "result": {
+                "PASS": 3
+            }
+        },
+        {
+            "checks": [
+                {
                     "description": "Are there any misaligned on-curve points?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Outline Correctness Checks>",
                         "<FontBakeryCheck:com.google.fonts/check/outline_alignment_miss>",
@@ -4621,7 +4844,7 @@
                 },
                 {
                     "description": "Are any segments inordinately short?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Outline Correctness Checks>",
                         "<FontBakeryCheck:com.google.fonts/check/outline_short_segments>",
@@ -4639,12 +4862,12 @@
                             "traceback": null
                         }
                     ],
-                    "rationale": "\n        This check looks for outline segments which seem particularly short (less than 0.006%% of the overall path length).\n\n        This check is not run for variable fonts, as they may legitimately have short segments. As this check is liable to generate significant numbers of false positives, it will pass if there are more than 100 reported short segments.\n    ",
+                    "rationale": "\n        This check looks for outline segments which seem particularly short (less than 0.6% of the overall path length).\n\n        This check is not run for variable fonts, as they may legitimately have short segments. As this check is liable to generate significant numbers of false positives, it will pass if there are more than 100 reported short segments.\n    ",
                     "result": "SKIP"
                 },
                 {
                     "description": "Do any segments have colinear vectors?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Outline Correctness Checks>",
                         "<FontBakeryCheck:com.google.fonts/check/outline_colinear_vectors>",
@@ -4667,7 +4890,7 @@
                 },
                 {
                     "description": "Do outlines contain any jaggy segments?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Outline Correctness Checks>",
                         "<FontBakeryCheck:com.google.fonts/check/outline_jaggy_segments>",
@@ -4690,7 +4913,7 @@
                 },
                 {
                     "description": "Do outlines contain any semi-vertical or semi-horizontal lines?",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Outline Correctness Checks>",
                         "<FontBakeryCheck:com.google.fonts/check/outline_semi_vertical>",
@@ -4726,7 +4949,7 @@
             "checks": [
                 {
                     "description": "Check that texts shape as per expectation",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Shaping Checks>",
                         "<FontBakeryCheck:com.google.fonts/check/shaping/regression>",
@@ -4749,7 +4972,7 @@
                 },
                 {
                     "description": "Check that no forbidden glyphs are found while shaping",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Shaping Checks>",
                         "<FontBakeryCheck:com.google.fonts/check/shaping/forbidden>",
@@ -4772,7 +4995,7 @@
                 },
                 {
                     "description": "Check that no collisions are found while shaping",
-                    "filename": "fonts/Kablammov0.21[move].ttf",
+                    "filename": "fonts/Kablammo[move].ttf",
                     "key": [
                         "<Section: Shaping Checks>",
                         "<FontBakeryCheck:com.google.fonts/check/shaping/collides>",
