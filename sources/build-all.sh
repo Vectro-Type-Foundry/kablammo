@@ -16,7 +16,7 @@ fontmake -g $glyphsSource -o variable --output-path $VF_full_output_path --flatt
 
 echo "generate static fonts"
 fontmake -g $glyphsSource -o otf -i --output-dir $static_output_path/otf -a
-fontmake -g $glyphsSource -o ttf -i --output-dir $static_output_path/ttf -a
+fontmake -g $glyphsSource -o ttf -i --output-dir $static_output_path/ttf -a --flatten-components
 
 echo "add stat table"
 gftools gen-stat $VF_full_output_path --src sources/scripts/stat.yaml --inplace
@@ -25,10 +25,12 @@ echo "misc table fixes"
 function fixMiscTables {
   echo "fix-nonhinting"
   gftools fix-nonhinting $1 $1
-  # echo "fix-fstype"
-  # gftools fix-fstype $1
-  # echo ""
-  # mv $1.fix $1 2>/dev/null
+  gftools fix-hinting $1
+
+  if test -f $1.fix; then
+    mv $1.fix $1
+  fi
+
   echo "fix dsig"
   gftools fix-dsig -f $1
 }
