@@ -65,5 +65,5 @@ The contextual alternates can be used to automatically swap alternates when lett
 ### Generating fonts
 1. In terminal `cd` to project directory
 2. run `source venv/bin/activate`
-3. run `sh sources/build-all.sh 0.13`. (use desired version number in place of `0.13`) (this can take a 10-15 minutes)
+3. run `sh sources/build-all.sh` (this can take a 10-15 minutes)
 4. If successful, generated fonts should show up in `fonts` directory under the specified version.
