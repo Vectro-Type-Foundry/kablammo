@@ -31,8 +31,8 @@ function fixMiscTables {
     mv $1.fix $1
   fi
 
-  echo "fix dsig"
-  gftools fix-dsig -f $1
+  # echo "fix dsig"
+  # gftools fix-dsig -f $1
 }
 fixMiscTables $VF_full_output_path
 for filename in $static_output_path/otf/*.otf; do
