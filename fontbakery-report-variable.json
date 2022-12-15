@@ -1,10 +1,10 @@
 {
     "result": {
-        "FAIL": 6,
+        "FAIL": 7,
         "INFO": 8,
-        "PASS": 103,
+        "PASS": 101,
         "SKIP": 105,
-        "WARN": 5
+        "WARN": 6
     },
     "sections": [
         {
@@ -126,13 +126,13 @@
                     ],
                     "logs": [
                         {
-                            "message": "Font filename is correct, \"Kablammo[move].ttf\".",
-                            "status": "PASS",
+                            "message": "Expected \"Kablammo[MUTA].ttf. Got Kablammo[move].ttf. [code: bad-filename]",
+                            "status": "FAIL",
                             "traceback": null
                         }
                     ],
                     "rationale": "\n        A font's filename must be composed as \"<familyname>-<stylename>.ttf\":\n\n        - Nunito-Regular.ttf\n        \n        - Oswald-BoldItalic.ttf\n\n\n        Variable fonts must list the axis tags in alphabetical order in\n        square brackets and separated by commas:\n\n        - Roboto[wdth,wght].ttf\n        \n        - Familyname-Italic[wght].ttf\n    ",
-                    "result": "PASS"
+                    "result": "FAIL"
                 },
                 {
                     "description": "Does DESCRIPTION file contain broken links?",
@@ -491,13 +491,13 @@
                     ],
                     "logs": [
                         {
-                            "message": "Missing required codepoints:\n\n\t- 0x0132 (LATIN CAPITAL LIGATURE IJ)\n\n\n\t- 0x0133 (LATIN SMALL LIGATURE IJ)\n \n\n\t- And 0x0237 (LATIN SMALL LETTER DOTLESS J)\n [code: missing-codepoints]",
-                            "status": "FAIL",
+                            "message": "OK",
+                            "status": "PASS",
                             "traceback": null
                         }
                     ],
                     "rationale": "\n        Google Fonts expects that fonts in its collection support at least the minimal\n        set of characters defined in the `GF-latin-core` glyph-set.\n    ",
-                    "result": "FAIL"
+                    "result": "PASS"
                 },
                 {
                     "description": "Check for METADATA subsets with zero support.",
@@ -1849,7 +1849,7 @@
                     ],
                     "logs": [
                         {
-                            "message": "Font names are incorrect:\n\n| nameID | current | expected |\n| :--- | :--- | :--- |\n| Family Name | Kablammo A | Kablammo |\n| Subfamily Name | Regular | Regular |\n| Full Name | Kablammo A | Kablammo  |\n| Poscript Name | Kablammo-A | Kablammo- |\n| Typographic Family Name | Kablammo | Kablammo |\n| Typographic Subfamily Name | A |  | [code: bad-names]",
+                            "message": "Font names are incorrect:\n\n| nameID | current | expected |\n| :--- | :--- | :--- |\n| Family Name | Kablammo 0 | Kablammo |\n| Subfamily Name | Regular | Regular |\n| Full Name | Kablammo 0 | Kablammo  |\n| Poscript Name | Kablammo-0 | Kablammo- |\n| Typographic Family Name | Kablammo | Kablammo |\n| Typographic Subfamily Name | 0 |  | [code: bad-names]",
                             "status": "FAIL",
                             "traceback": null
                         }
@@ -2146,7 +2146,7 @@
                     ],
                     "logs": [
                         {
-                            "message": "fvar instances are incorrect:\n- Add missing instances\n- Delete additional instances\n\n| Name | current | expected |\n| :--- | :--- | :--- |\n| A | move=1.0 | N/A |\n| B | move=333.0 | N/A |\n| C | move=666.0 | N/A |\n| D | move=1000.0 | N/A |\n| Regular | N/A | move=1.0 | [code: bad-fvar-instances]",
+                            "message": "fvar instances are incorrect:\n- Add missing instances\n- Delete additional instances\n\n| Name | current | expected |\n| :--- | :--- | :--- |\n| Regular | N/A | MUTA=0.0 |\n| 40 | MUTA=40.0 | N/A |\n| 60 | MUTA=60.0 | N/A |\n| 20 | MUTA=20.0 | N/A |\n| 0 | MUTA=0.0 | N/A | [code: bad-fvar-instances]",
                             "status": "FAIL",
                             "traceback": null
                         }
@@ -2790,13 +2790,13 @@
                     ],
                     "logs": [
                         {
-                            "message": "OK",
-                            "status": "PASS",
+                            "message": "This variable font does not have an avar table. [code: missing-avar]",
+                            "status": "WARN",
                             "traceback": null
                         }
                     ],
                     "rationale": "\n        Most variable fonts should include an avar table to correctly define\n        axes progression rates.\n\n        For example, a weight axis from 0% to 100% doesn't map directly to 100 to 1000,\n        because a 10% progression from 0% may be too much to define the 200,\n        while 90% may be too little to define the 900.\n\n        If the progression rates of axes is linear, this check can be ignored.\n        Fontmake will also skip adding an avar table if the progression rates\n        are linear. However, we still recommend designers visually proof each\n        instance is at the expected weight, width etc.\n    ",
-                    "result": "PASS"
+                    "result": "WARN"
                 },
                 {
                     "description": "On a family update, the DESCRIPTION.en_us.html file should ideally also be updated.",
@@ -2977,7 +2977,7 @@
                     ],
                     "logs": [
                         {
-                            "message": "Font can successfully render its own name (Kablammo A)",
+                            "message": "Font can successfully render its own name (Kablammo 0)",
                             "status": "PASS",
                             "traceback": null
                         }
@@ -3040,9 +3040,9 @@
             "result": {
                 "FAIL": 4,
                 "INFO": 6,
-                "PASS": 42,
+                "PASS": 41,
                 "SKIP": 79,
-                "WARN": 3
+                "WARN": 4
             }
         },
         {
@@ -3650,18 +3650,13 @@
                     ],
                     "logs": [
                         {
-                            "message": "Overridden check status, original: <Status SKIP>",
-                            "status": "DEBUG",
-                            "traceback": null
-                        },
-                        {
-                            "message": "FreeType is not available; to install it, invoke the 'freetype' extra when installing Font Bakery. [code: freetype-not-installed]",
-                            "status": "FAIL",
+                            "message": "Font can be rasterized by FreeType.",
+                            "status": "PASS",
                             "traceback": null
                         }
                     ],
                     "rationale": "\n        Malformed fonts can cause FreeType to crash.\n    ",
-                    "result": "FAIL"
+                    "result": "PASS"
                 },
                 {
                     "description": "Font has the proper sfntVersion value?",
@@ -3717,9 +3712,8 @@
                 null
             ],
             "result": {
-                "FAIL": 1,
                 "INFO": 2,
-                "PASS": 20,
+                "PASS": 21,
                 "SKIP": 4,
                 "WARN": 2
             }
@@ -4947,7 +4941,7 @@
                     ],
                     "logs": [
                         {
-                            "message": "'A' instance has the same coordinates as the default instance; its subfamily name should be 'Regular' [code: invalid-default-instance-subfamily-nameid:257]",
+                            "message": "'0' instance has the same coordinates as the default instance; its subfamily name should be 'Regular' [code: invalid-default-instance-subfamily-nameid:257]",
                             "status": "FAIL",
                             "traceback": null
                         }
@@ -5030,13 +5024,13 @@
                     ],
                     "logs": [
                         {
-                            "message": "STAT table has all necessary Axis Records.",
-                            "status": "PASS",
+                            "message": "STAT table is missing Axis Records for the following axes:\n\n\t- MUTA [code: missing-axis-records]",
+                            "status": "FAIL",
                             "traceback": null
                         }
                     ],
                     "rationale": "\n        According to the OpenType spec, there must be an Axis Record\n        for every axis defined in the fvar table.\n\n        https://docs.microsoft.com/en-us/typography/opentype/spec/stat#axis-records\n    ",
-                    "result": "PASS"
+                    "result": "FAIL"
                 },
                 {
                     "description": "STAT table has Axis Value tables?",
@@ -5053,13 +5047,28 @@
                     ],
                     "logs": [
                         {
-                            "message": "STAT table has Axis Value tables.",
-                            "status": "PASS",
+                            "message": "STAT table is missing Axis Value for 'MUTA' value '0.0' [code: missing-axis-value-table]",
+                            "status": "FAIL",
+                            "traceback": null
+                        },
+                        {
+                            "message": "STAT table is missing Axis Value for 'MUTA' value '20.0' [code: missing-axis-value-table]",
+                            "status": "FAIL",
+                            "traceback": null
+                        },
+                        {
+                            "message": "STAT table is missing Axis Value for 'MUTA' value '40.0' [code: missing-axis-value-table]",
+                            "status": "FAIL",
+                            "traceback": null
+                        },
+                        {
+                            "message": "STAT table is missing Axis Value for 'MUTA' value '60.0' [code: missing-axis-value-table]",
+                            "status": "FAIL",
                             "traceback": null
                         }
                     ],
                     "rationale": "\n        According to the OpenType spec, in a variable font, it is strongly recommended\n        that axis value tables be included for every element of typographic subfamily\n        names for all of the named instances defined in the 'fvar' table.\n\n        Axis value tables are particularly important for variable fonts, but can also\n        be used in non-variable fonts. When used in non-variable fonts, axis value\n        tables for particular values should be implemented consistently across fonts\n        in the family.\n\n        https://docs.microsoft.com/en-us/typography/opentype/spec/stat#axis-value-tables\n    ",
-                    "result": "PASS"
+                    "result": "FAIL"
                 }
             ],
             "key": [
@@ -5068,7 +5077,7 @@
                 null
             ],
             "result": {
-                "PASS": 2
+                "FAIL": 2
             }
         },
         {
