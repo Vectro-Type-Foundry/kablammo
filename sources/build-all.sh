@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-glyphsSource="sources/Kablammo-debug.glyphs"
+glyphsSource="sources/Kablammo.glyphs"
 
 output_path="fonts"
 static_output_path="${output_path}/static"
