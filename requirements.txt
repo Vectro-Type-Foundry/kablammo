@@ -1,5 +1,5 @@
 afdko
 fontmake
-fontbakery[freetype]
+fontbakery
 gftools
 Pillow
