@@ -60,7 +60,7 @@ The contextual alternates can be used to automatically swap alternates when lett
 1. In terminal `cd` to project directory (tip: type `cd ` then drag folder into terminal for path)
 2. run `virtualenv venv` 
 3. run `source venv/bin/activate`
-4. run `pip3 install -U -r requirements.txt`
+4. run `pip install -U -r requirements.txt`
 
 ### Generating fonts
 1. In terminal `cd` to project directory

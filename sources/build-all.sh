@@ -11,7 +11,7 @@ rm -rf $output_path
 mkdir -p $output_path $static_output_path $variable_output_path 
 
 echo "generate variable font"
-VF_full_output_path="${variable_output_path}/Kablammo[move].ttf"
+VF_full_output_path="${variable_output_path}/Kablammo[MUTA].ttf"
 fontmake -g $glyphsSource -o variable --output-path $VF_full_output_path --flatten-components -a
 
 echo "generate static fonts"
@@ -31,8 +31,8 @@ function fixMiscTables {
     mv $1.fix $1
   fi
 
-  echo "fix dsig"
-  gftools fix-dsig -f $1
+  # echo "fix dsig"
+  # gftools fix-dsig -f $1
 }
 fixMiscTables $VF_full_output_path
 for filename in $static_output_path/otf/*.otf; do
