@@ -12,11 +12,11 @@ Mutation | MUTA | 0 to 60 | 1 | Causes elements to move around, and weight to sh
 
 ### Axis Definitions
 
-#### `MUTA` Movement Axis
+#### `MUTA` Mutation Axis
 
 The `MUTA` axis makes the glyphs dance! The decorative elements fly all over the place along with a shifting weight and contrast. This lends itself particularly well to animations. This can also be used to choose variations of glyphs. There are 4 primary styles for each glyph, but intermediate states of each are possible using the variable axis.
 
-![alt text](documentation/img/Kablammo-Movement.gif "Kablammo Mutation")
+![alt text](documentation/img/Kablammo-Mutation.gif "Kablammo Mutation")
 
 ## OpenType Features
 
@@ -26,6 +26,13 @@ The contextual alternates can be used to automatically swap alternates when lett
 
 ![alt text](documentation/img/Kablammo-ContextualAlternates.png "Kablammo Contextual Alternates")
 
+## Software
+
+The following software and scripts were used in the production of this typeface:
+* [Glyphs (v3)](https://glyphsapp.com)
+* [KablammoScripts](https://github.com/scribbletone/kablammo-scripts)
+
+[KablammoScripts](https://github.com/scribbletone/kablammo-scripts) contains many useful scripts for various parts of the project. Most are not vital, but can help speed the process up. The one exception is the 'Generate Reverse Alts' script. This script should be run before generation of the fonts, especially if changes are made to glyphs that get swapped by contextual alternates. This script copies glyphs and creates their contextual alternate by reversing the order of masters they appear on.
 
 ## Design Notes
 
