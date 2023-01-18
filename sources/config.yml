@@ -1,0 +1,19 @@
+sources:
+  - Kablammo.glyphs
+buildOTF: False
+buildTTF: False
+axisOrder:
+  - MUTA
+familyName: "Kablammo"
+stat:
+  - name: Mutation
+    tag: MUTA
+    values:
+    - name: Zoink
+      value: 0
+    - name: Plop
+      value: 20
+    - name: Splat
+      value: 40
+    - name: Eek
+      value: 60
