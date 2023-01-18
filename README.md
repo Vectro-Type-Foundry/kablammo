@@ -8,15 +8,15 @@ Kablammo has the following axes:
 
 Axis | Tag | Range | Default | Description
 --- | --- | --- | --- | ---
-Movement | move | 1 to 1000 | 1 | Causes elements to move around, and weight to shift
+Mutation | MUTA | 0 to 60 | 1 | Causes elements to move around, and weight to shift
 
 ### Axis Definitions
 
-#### `move` Movement Axis
+#### `MUTA` Movement Axis
 
-The `move` axis makes the glyphs dance! The decorative elements fly all over the place along with a shifting weight and contrast. This lends itself particularly well to animations. This can also be used to choose variations of glyphs. There are 4 primary styles for each glyph, but intermediate states of each are possible using the variable axis.
+The `MUTA` axis makes the glyphs dance! The decorative elements fly all over the place along with a shifting weight and contrast. This lends itself particularly well to animations. This can also be used to choose variations of glyphs. There are 4 primary styles for each glyph, but intermediate states of each are possible using the variable axis.
 
-![alt text](documentation/img/Kablammo-Movement.gif "Kablammo Movement")
+![alt text](documentation/img/Kablammo-Movement.gif "Kablammo Mutation")
 
 ## OpenType Features
 
@@ -51,6 +51,11 @@ The contextual alternates can be used to automatically swap alternates when lett
 
 
 ## Building the fonts
+- Triggered by github workflow/actions on push to main branch.
+
+
+
+## OLD
 
 ### Requirements
 - Python 3
