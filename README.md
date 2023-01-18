@@ -58,17 +58,18 @@ The following software and scripts were used in the production of this typeface:
 
 
 ## Building the fonts
-- Triggered by github workflow/actions on push to main branch.
 
+- There is a GitHub workflow/actions triggered on push to `main` branch that will build the fonts and test them using Fontbakery. To inspect the build and test results go to the `Actions` tab in the repository and then to the latest action run.
 
-
-## OLD
+- To build the fonts locally, follow the instructions next:
 
 ### Requirements
 - Python 3
 - Recent version of [fontmake](https://github.com/googlefonts/fontmake)
 
-### Environment setup (optional but recommended method to install dependences)
+### Environment setup 
+
+Optional but recommended method to install dependences. This step has to be done just once, the first time.
 1. In terminal `cd` to project directory (tip: type `cd ` then drag folder into terminal for path)
 2. run `virtualenv venv` 
 3. run `source venv/bin/activate`
@@ -76,6 +77,6 @@ The following software and scripts were used in the production of this typeface:
 
 ### Generating fonts
 1. In terminal `cd` to project directory
-2. run `source venv/bin/activate`
-3. run `sh sources/build-all.sh` (this can take a 10-15 minutes)
+2. run `source venv/bin/activate` This step has to be done everytime you work in the project.
+3. run `gftools builder sources/config.yml` (this can take a 10-15 minutes)
 4. If successful, generated fonts should show up in `fonts` directory under the specified version.
