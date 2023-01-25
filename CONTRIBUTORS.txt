@@ -9,6 +9,12 @@
 # Names should be added to this file as:
 # Name <email address>
 
+Art Direction:
+Travis Kochel and Lizy Gershenzon
+
+Lead Design and Production:
+Travis Kochel
+
 Production Help:
 Daria Petrova <>
 Ethan Cohen <ethan@ethancohenstudio.com>

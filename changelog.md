@@ -1,5 +1,10 @@
 # Changelog
 
+### January 25, 2023
+- New instance names
+- Add Acaron
+- Update designers in metadata
+
 
 ### January 18, 2023
 - Migrate to gftools and github workflows build process
