@@ -10,18 +10,18 @@
 # Name <email address>
 
 Art Direction:
-Travis Kochel and Lizy Gershenzon
+Travis Kochel and Lizy Gershenzon (Vectro)
 
 Lead Design and Production:
 Travis Kochel
 
 Production Help:
-Daria Petrova <>
-Ethan Cohen <ethan@ethancohenstudio.com>
+Daria Petrova 
+Ethan Cohen
 
 Cyrillic Design and Production:
-Daria Petrova <>
-Ethan Cohen <ethan@ethancohenstudio.com>
+Daria Petrova
+Ethan Cohen
 
 Website Design:
-FISK <hey@fiskprojects.com>
+FISK
