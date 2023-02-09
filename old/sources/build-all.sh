@@ -11,7 +11,7 @@ rm -rf $output_path
 mkdir -p $output_path $static_output_path $variable_output_path 
 
 echo "generate variable font"
-VF_full_output_path="${variable_output_path}/Kablammo[MUTA].ttf"
+VF_full_output_path="${variable_output_path}/Kablammo[MORP].ttf"
 fontmake -g $glyphsSource -o variable --output-path $VF_full_output_path --flatten-components -a
 
 echo "generate static fonts"

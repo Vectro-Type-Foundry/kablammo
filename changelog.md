@@ -1,5 +1,9 @@
 # Changelog
 
+### Feb 9, 2023
+- Changed axis name to Morph (MORF)
+- Renamed instance `Plop` to `Bloop`
+
 ### January 25, 2023
 - New instance names
 - Add Acaron

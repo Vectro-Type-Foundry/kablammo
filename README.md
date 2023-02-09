@@ -8,15 +8,15 @@ Kablammo has the following axes:
 
 Axis | Tag | Range | Default | Description
 --- | --- | --- | --- | ---
-Mutation | MUTA | 0 to 60 | 1 | Causes elements to move around, and weight to shift
+Morph | MORF | 0 to 60 | 1 | Causes elements to move around, and weight to shift
 
 ### Axis Definitions
 
-#### `MUTA` Mutation Axis
+#### `MORF` Morph Axis
 
-The `MUTA` axis makes the glyphs dance! The decorative elements fly all over the place along with a shifting weight and contrast. This lends itself particularly well to animations. This can also be used to choose variations of glyphs. There are 4 primary styles for each glyph, but intermediate states of each are possible using the variable axis.
+The `MORF` axis makes the glyphs dance! The decorative elements fly all over the place along with a shifting weight and contrast. This lends itself particularly well to animations. This can also be used to choose variations of glyphs. There are 4 primary styles for each glyph, but intermediate states of each are possible using the variable axis.
 
-![alt text](documentation/img/Kablammo-Mutation.gif "Kablammo Mutation")
+![alt text](documentation/img/Kablammo-Morph.gif "Kablammo Morph")
 
 ## OpenType Features
 
