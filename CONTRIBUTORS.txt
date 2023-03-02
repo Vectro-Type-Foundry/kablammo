@@ -9,19 +9,7 @@
 # Names should be added to this file as:
 # Name <email address>
 
-Art Direction:
-Travis Kochel and Lizy Gershenzon (Vectro)
-
-Lead Design and Production:
-Travis Kochel
-
-Production Help:
+Travis Kochel <travis@vectrotype.com>
+Lizy Gershenzon <lizy@vectrotype.com>
 Daria Petrova 
 Ethan Cohen
-
-Cyrillic Design and Production:
-Daria Petrova
-Ethan Cohen
-
-Website Design:
-FISK
