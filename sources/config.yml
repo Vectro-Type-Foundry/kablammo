@@ -1,6 +1,6 @@
 sources:
   - Kablammo.glyphs
-buildOTF: False
+buildOTF: True
 buildTTF: False
 axisOrder:
   - MORF
