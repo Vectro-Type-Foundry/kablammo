@@ -7,36 +7,45 @@ import datetime;
 # Customize this stuff
 #------------------ 
 
-v='v0.22'
+timestamp = str(datetime.datetime.now().strftime('%Y-%m-%d_%H-%M'))
+fileName = '~/Desktop/Temp/KablammoSpacingProof-' + timestamp + '.pdf'
+
 
 fonts = [
     {
-        'title': 'A',
-        'fontPath': '../../fonts/static/otf/Kablammo' + v + '-A.otf'
+        'title': 'Zoink',
+        'fontPath': '../../fonts/otf/Kablammo-Zoink.otf'
     },
     {
-        'title': 'B',
-        'fontPath': '../../fonts/static/otf/Kablammo' + v + '-B.otf'
+        'title': 'Bloop',
+        'fontPath': '../../fonts/otf/Kablammo-Bloop.otf'
     },
     {
-        'title': 'C',
-        'fontPath': '../../fonts/static/otf/Kablammo' + v + '-C.otf'
+        'title': 'Splat',
+        'fontPath': '../../fonts/otf/Kablammo-Splat.otf'
     },
     {
-        'title': 'D',
-        'fontPath': '../../fonts/static/otf/Kablammo' + v + '-D.otf'
+        'title': 'Eek',
+        'fontPath': '../../fonts/otf/Kablammo-Eek.otf'
     }
 ]
+
+
 txtFontSize = 25
 txtLineHeight = 45
+
+# number of glyphs per row on each master
 numCols = 1
+#number of rows per page
 numRows = 15
 
+# customize the glyphs that surround each glyph. Maybe use 'non', 'ono' for lowercase
 spaceStrings=['HOH','OHO']
 
 bgColorR, bgColorG, bgColorB, bgColorA = 1,1,1,1
 textColorR, textColorG, textColorB, textColorA = 0,0,0,1
 
+# layout customization
 docWidth, docHeight = 1150, 800
 topMargin, rightMargin, bottomMargin, leftMargin = 60, 40, 40, 40 
 
@@ -44,15 +53,16 @@ textBoxWidth = docWidth - leftMargin - rightMargin
 textBoxHeight = docHeight - topMargin - bottomMargin
 
 showTitle = True # enable if you'd like to display the title
-titleFont = 'ISO v0.9'
+pageTitle = 'Kablammo Test: ' + timestamp
+
+# font settings for page titles and headers
+titleFont = 'VCTR Mono'
 titleFontSize = 12
 titleTextColorR, titleTextColorG, titleTextColorB, titleTextColorA = 0,0,0,1
 titleX, titleY = docWidth/2, docHeight - 50
 
 
-timestamp = str(datetime.datetime.now().strftime('%Y-%m-%d_%H-%M'))
-fileName = '~/Desktop/Temp/KablammoSpacingProof-' + timestamp + '.pdf'
-
+# if there are any glyphs or glyphs with suffixes, you'd like to ignore, list them here.
 blacklistSuffixes = ['.rev', '.bottomless', '.topless', '.nodot', '.toplessbottomless', '.midless']
 
 #------------------ 
@@ -101,7 +111,7 @@ def drawTitle(f):
         font(titleFont)
         fontSize(titleFontSize)
         fill(titleTextColorR, titleTextColorG, titleTextColorB, titleTextColorA)
-        text('Kablammo Test: ' + timestamp, (titleX, titleY), align='center')
+        text(pageTitle, (titleX, titleY), align='center')
     
 def drawPage(f, glyphList, pNum):
     setupNewPage()
